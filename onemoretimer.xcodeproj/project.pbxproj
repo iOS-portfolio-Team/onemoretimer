@@ -1,0 +1,712 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32C1C2B525E602DC008A4FB9 /* TabataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1C2B425E602DC008A4FB9 /* TabataViewController.swift */; };
+		32C1C2B825E602E9008A4FB9 /* TabataTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1C2B725E602E9008A4FB9 /* TabataTimerViewController.swift */; };
+		32C1C2BB25E602FA008A4FB9 /* TabataCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1C2BA25E602FA008A4FB9 /* TabataCommentViewController.swift */; };
+		32C1C2BE25E60311008A4FB9 /* TabataProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1C2BD25E60311008A4FB9 /* TabataProgressBar.swift */; };
+		49E17E8425E5F826000F9AD9 /* EMOMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E17E8325E5F826000F9AD9 /* EMOMViewController.swift */; };
+		49E17E8725E5F838000F9AD9 /* EMOMTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E17E8625E5F838000F9AD9 /* EMOMTimerViewController.swift */; };
+		49E17E8A25E5F848000F9AD9 /* EMOMCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E17E8925E5F848000F9AD9 /* EMOMCommentViewController.swift */; };
+		49E17E8D25E5F857000F9AD9 /* EMOMProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E17E8C25E5F857000F9AD9 /* EMOMProgressBar.swift */; };
+		49E17E9025E5F99A000F9AD9 /* infinity.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E17E8F25E5F99A000F9AD9 /* infinity.png */; };
+		7257CF3A547AF815B69177D7 /* Pods_onemoretimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65CEC08F3E81254AC43DAA9C /* Pods_onemoretimer.framework */; };
+		759EC61F25E53C65007E1BA3 /* ForTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759EC61E25E53C65007E1BA3 /* ForTimeViewController.swift */; };
+		759EC62525E5458F007E1BA3 /* ForTimeProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759EC62425E5458F007E1BA3 /* ForTimeProgressBar.swift */; };
+		759EC62C25E54DAE007E1BA3 /* ForTimeTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759EC62B25E54DAE007E1BA3 /* ForTimeTimerViewController.swift */; };
+		7C1FD33C25E7A6EF0043055C /* ForTimeCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1FD33B25E7A6EF0043055C /* ForTimeCommentViewController.swift */; };
+		7C5646F025EA5757006FCB37 /* buttonTabata.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C5646EF25EA5756006FCB37 /* buttonTabata.png */; };
+		7C5646FA25EA62A0006FCB37 /* AmrapTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5646F525EA629E006FCB37 /* AmrapTimerViewController.swift */; };
+		7C5646FB25EA62A0006FCB37 /* AmrapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5646F625EA629F006FCB37 /* AmrapViewController.swift */; };
+		7C5646FC25EA62A0006FCB37 /* AmrapCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5646F725EA629F006FCB37 /* AmrapCommentViewController.swift */; };
+		7C5646FD25EA62A0006FCB37 /* AmrapTimeProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5646F825EA62A0006FCB37 /* AmrapTimeProgressBar.swift */; };
+		7C5646FE25EA62A0006FCB37 /* AmrapCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5646F925EA62A0006FCB37 /* AmrapCollectionViewCell.swift */; };
+		7C65D48025E785DB00653978 /* EndWorkOut.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7C65D47A25E785DA00653978 /* EndWorkOut.mp3 */; };
+		7C65D48125E785DB00653978 /* HalfInWorkOut.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7C65D47B25E785DA00653978 /* HalfInWorkOut.mp3 */; };
+		7C65D48225E785DB00653978 /* CountDown.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7C65D47C25E785DA00653978 /* CountDown.wav */; };
+		7C65D48325E785DB00653978 /* StartWorkOut.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7C65D47D25E785DA00653978 /* StartWorkOut.mp3 */; };
+		7C65D48425E785DB00653978 /* PauseWorkOut.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7C65D47E25E785DA00653978 /* PauseWorkOut.mp3 */; };
+		7C65D48525E785DB00653978 /* TenSecondLeft.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7C65D47F25E785DB00653978 /* TenSecondLeft.mp3 */; };
+		7C68386B25EA451600BABF97 /* TimerImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C68386A25EA451600BABF97 /* TimerImage.png */; };
+		7C68387325EA4DBA00BABF97 /* buttonLifting.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C68386D25EA4DB800BABF97 /* buttonLifting.png */; };
+		7C68387525EA4DBA00BABF97 /* buttonAMRAP.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C68386F25EA4DB900BABF97 /* buttonAMRAP.png */; };
+		7C68387625EA4DBA00BABF97 /* buttonForTime.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C68387025EA4DB900BABF97 /* buttonForTime.png */; };
+		7C68387725EA4DBA00BABF97 /* buttonWorkOutLog.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C68387125EA4DBA00BABF97 /* buttonWorkOutLog.png */; };
+		7C68387825EA4DBA00BABF97 /* buttonEMOM.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C68387225EA4DBA00BABF97 /* buttonEMOM.png */; };
+		7C68387C25EA4E2400BABF97 /* buttonRemove.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C68387B25EA4E2400BABF97 /* buttonRemove.png */; };
+		7C98139425E4130B001F06F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C98139325E4130B001F06F6 /* AppDelegate.swift */; };
+		7C98139625E4130B001F06F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C98139525E4130B001F06F6 /* SceneDelegate.swift */; };
+		7C98139B25E4130B001F06F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C98139925E4130B001F06F6 /* Main.storyboard */; };
+		7C98139D25E4130D001F06F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C98139C25E4130D001F06F6 /* Assets.xcassets */; };
+		7C9813A025E4130D001F06F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C98139E25E4130D001F06F6 /* LaunchScreen.storyboard */; };
+		7C9813BD25E413A4001F06F6 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9813AB25E413A4001F06F6 /* plus.png */; };
+		7C9813BE25E413A4001F06F6 /* EMOM.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9813AC25E413A4001F06F6 /* EMOM.png */; };
+		7C9813BF25E413A4001F06F6 /* goImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9813AD25E413A4001F06F6 /* goImage.png */; };
+		7C9813C025E413A4001F06F6 /* buttonBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9813AE25E413A4001F06F6 /* buttonBackground.png */; };
+		7C9813C225E413A4001F06F6 /* TABATA.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9813B025E413A4001F06F6 /* TABATA.png */; };
+		7C9813C325E413A4001F06F6 /* LIFTING.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9813B125E413A4001F06F6 /* LIFTING.png */; };
+		7C9813C425E413A4001F06F6 /* Logo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7C9813B225E413A4001F06F6 /* Logo.jpeg */; };
+		7C9813C625E413A4001F06F6 /* success.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9813B425E413A4001F06F6 /* success.png */; };
+		7C9813C725E413A4001F06F6 /* FORTIME.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9813B525E413A4001F06F6 /* FORTIME.png */; };
+		7C9813C825E413A4001F06F6 /* AMRAP.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9813B625E413A4001F06F6 /* AMRAP.png */; };
+		7C9813C925E413A4001F06F6 /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9813B725E413A4001F06F6 /* main.png */; };
+		7C9813CC25E413A4001F06F6 /* smile.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9813BA25E413A4001F06F6 /* smile.png */; };
+		7CCF6CCB25E62F1000423BDF /* LiftingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF6CCA25E62F1000423BDF /* LiftingViewController.swift */; };
+		7CCF6CCF25E62F1F00423BDF /* LiftingTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF6CCE25E62F1F00423BDF /* LiftingTimerViewController.swift */; };
+		7CCF6CD225E62F2F00423BDF /* LiftingCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF6CD125E62F2F00423BDF /* LiftingCommentViewController.swift */; };
+		7CCF6CD525E62F6200423BDF /* LiftingProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF6CD425E62F6200423BDF /* LiftingProgressBar.swift */; };
+		7CCF6CD925E68BBF00423BDF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF6CD825E68BBF00423BDF /* SettingsViewController.swift */; };
+		7CCF6CDE25E68C2600423BDF /* MainTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF6CDD25E68C2600423BDF /* MainTimerViewController.swift */; };
+		D7608AEC25E4E78500839EA6 /* workoutLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7608AEB25E4E78500839EA6 /* workoutLog.swift */; };
+		D7608AEF25E4E7AE00839EA6 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7608AEE25E4E7AE00839EA6 /* DBHelper.swift */; };
+		D7608AF225E4E7EB00839EA6 /* WorkoutLogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7608AF125E4E7EB00839EA6 /* WorkoutLogTableViewController.swift */; };
+		D7608AF525E4E81800839EA6 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7608AF425E4E81800839EA6 /* InputViewController.swift */; };
+		D7608AF825E4E84000839EA6 /* WorkoutLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7608AF725E4E84000839EA6 /* WorkoutLogTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28EAC01AF00042BCA53A2499 /* Pods-onemoretimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onemoretimer.release.xcconfig"; path = "Target Support Files/Pods-onemoretimer/Pods-onemoretimer.release.xcconfig"; sourceTree = "<group>"; };
+		32C1C2B425E602DC008A4FB9 /* TabataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabataViewController.swift; path = onemoretimer/Tabata/TabataViewController.swift; sourceTree = SOURCE_ROOT; };
+		32C1C2B725E602E9008A4FB9 /* TabataTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabataTimerViewController.swift; path = onemoretimer/Tabata/TabataTimerViewController.swift; sourceTree = SOURCE_ROOT; };
+		32C1C2BA25E602FA008A4FB9 /* TabataCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabataCommentViewController.swift; path = onemoretimer/Tabata/TabataCommentViewController.swift; sourceTree = SOURCE_ROOT; };
+		32C1C2BD25E60311008A4FB9 /* TabataProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabataProgressBar.swift; path = onemoretimer/Tabata/TabataProgressBar.swift; sourceTree = SOURCE_ROOT; };
+		49E17E8325E5F826000F9AD9 /* EMOMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EMOMViewController.swift; path = onemoretimer/EMOM/EMOMViewController.swift; sourceTree = SOURCE_ROOT; };
+		49E17E8625E5F838000F9AD9 /* EMOMTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EMOMTimerViewController.swift; path = onemoretimer/EMOM/EMOMTimerViewController.swift; sourceTree = SOURCE_ROOT; };
+		49E17E8925E5F848000F9AD9 /* EMOMCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EMOMCommentViewController.swift; path = onemoretimer/EMOM/EMOMCommentViewController.swift; sourceTree = SOURCE_ROOT; };
+		49E17E8C25E5F857000F9AD9 /* EMOMProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EMOMProgressBar.swift; path = onemoretimer/EMOM/EMOMProgressBar.swift; sourceTree = SOURCE_ROOT; };
+		49E17E8F25E5F99A000F9AD9 /* infinity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = infinity.png; sourceTree = "<group>"; };
+		65CEC08F3E81254AC43DAA9C /* Pods_onemoretimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_onemoretimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		759EC61E25E53C65007E1BA3 /* ForTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ForTimeViewController.swift; path = onemoretimer/ForTime/ForTimeViewController.swift; sourceTree = SOURCE_ROOT; };
+		759EC62425E5458F007E1BA3 /* ForTimeProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForTimeProgressBar.swift; sourceTree = "<group>"; };
+		759EC62B25E54DAE007E1BA3 /* ForTimeTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ForTimeTimerViewController.swift; path = onemoretimer/ForTime/ForTimeTimerViewController.swift; sourceTree = SOURCE_ROOT; };
+		7C1FD33B25E7A6EF0043055C /* ForTimeCommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForTimeCommentViewController.swift; path = onemoretimer/ForTime/ForTimeCommentViewController.swift; sourceTree = SOURCE_ROOT; };
+		7C5646EF25EA5756006FCB37 /* buttonTabata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonTabata.png; sourceTree = "<group>"; };
+		7C5646F525EA629E006FCB37 /* AmrapTimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmrapTimerViewController.swift; sourceTree = "<group>"; };
+		7C5646F625EA629F006FCB37 /* AmrapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmrapViewController.swift; sourceTree = "<group>"; };
+		7C5646F725EA629F006FCB37 /* AmrapCommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmrapCommentViewController.swift; sourceTree = "<group>"; };
+		7C5646F825EA62A0006FCB37 /* AmrapTimeProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmrapTimeProgressBar.swift; sourceTree = "<group>"; };
+		7C5646F925EA62A0006FCB37 /* AmrapCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmrapCollectionViewCell.swift; sourceTree = "<group>"; };
+		7C65D47A25E785DA00653978 /* EndWorkOut.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = EndWorkOut.mp3; sourceTree = "<group>"; };
+		7C65D47B25E785DA00653978 /* HalfInWorkOut.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HalfInWorkOut.mp3; sourceTree = "<group>"; };
+		7C65D47C25E785DA00653978 /* CountDown.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = CountDown.wav; sourceTree = "<group>"; };
+		7C65D47D25E785DA00653978 /* StartWorkOut.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = StartWorkOut.mp3; sourceTree = "<group>"; };
+		7C65D47E25E785DA00653978 /* PauseWorkOut.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PauseWorkOut.mp3; sourceTree = "<group>"; };
+		7C65D47F25E785DB00653978 /* TenSecondLeft.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenSecondLeft.mp3; sourceTree = "<group>"; };
+		7C68386A25EA451600BABF97 /* TimerImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TimerImage.png; path = ../../../Resources/TimerImage.png; sourceTree = "<group>"; };
+		7C68386D25EA4DB800BABF97 /* buttonLifting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonLifting.png; sourceTree = "<group>"; };
+		7C68386F25EA4DB900BABF97 /* buttonAMRAP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonAMRAP.png; sourceTree = "<group>"; };
+		7C68387025EA4DB900BABF97 /* buttonForTime.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonForTime.png; sourceTree = "<group>"; };
+		7C68387125EA4DBA00BABF97 /* buttonWorkOutLog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonWorkOutLog.png; sourceTree = "<group>"; };
+		7C68387225EA4DBA00BABF97 /* buttonEMOM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonEMOM.png; sourceTree = "<group>"; };
+		7C68387B25EA4E2400BABF97 /* buttonRemove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonRemove.png; sourceTree = "<group>"; };
+		7C98139025E4130B001F06F6 /* onemoretimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = onemoretimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C98139325E4130B001F06F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7C98139525E4130B001F06F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7C98139A25E4130B001F06F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7C98139C25E4130D001F06F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C98139F25E4130D001F06F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7C9813A125E4130D001F06F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C9813AB25E413A4001F06F6 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		7C9813AC25E413A4001F06F6 /* EMOM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EMOM.png; sourceTree = "<group>"; };
+		7C9813AD25E413A4001F06F6 /* goImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goImage.png; sourceTree = "<group>"; };
+		7C9813AE25E413A4001F06F6 /* buttonBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonBackground.png; sourceTree = "<group>"; };
+		7C9813B025E413A4001F06F6 /* TABATA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TABATA.png; sourceTree = "<group>"; };
+		7C9813B125E413A4001F06F6 /* LIFTING.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LIFTING.png; sourceTree = "<group>"; };
+		7C9813B225E413A4001F06F6 /* Logo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Logo.jpeg; sourceTree = "<group>"; };
+		7C9813B425E413A4001F06F6 /* success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = success.png; sourceTree = "<group>"; };
+		7C9813B525E413A4001F06F6 /* FORTIME.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FORTIME.png; sourceTree = "<group>"; };
+		7C9813B625E413A4001F06F6 /* AMRAP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AMRAP.png; sourceTree = "<group>"; };
+		7C9813B725E413A4001F06F6 /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main.png; sourceTree = "<group>"; };
+		7C9813BA25E413A4001F06F6 /* smile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smile.png; sourceTree = "<group>"; };
+		7CCF6CCA25E62F1000423BDF /* LiftingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftingViewController.swift; sourceTree = "<group>"; };
+		7CCF6CCE25E62F1F00423BDF /* LiftingTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftingTimerViewController.swift; sourceTree = "<group>"; };
+		7CCF6CD125E62F2F00423BDF /* LiftingCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftingCommentViewController.swift; sourceTree = "<group>"; };
+		7CCF6CD425E62F6200423BDF /* LiftingProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftingProgressBar.swift; sourceTree = "<group>"; };
+		7CCF6CD825E68BBF00423BDF /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		7CCF6CDD25E68C2600423BDF /* MainTimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTimerViewController.swift; sourceTree = "<group>"; };
+		D7608AEB25E4E78500839EA6 /* workoutLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = workoutLog.swift; path = onemoretimer/WorkOutLog/workoutLog.swift; sourceTree = SOURCE_ROOT; };
+		D7608AEE25E4E7AE00839EA6 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DBHelper.swift; path = onemoretimer/WorkOutLog/DBHelper.swift; sourceTree = SOURCE_ROOT; };
+		D7608AF125E4E7EB00839EA6 /* WorkoutLogTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WorkoutLogTableViewController.swift; path = onemoretimer/WorkOutLog/WorkoutLogTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		D7608AF425E4E81800839EA6 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InputViewController.swift; path = onemoretimer/WorkOutLog/InputViewController.swift; sourceTree = SOURCE_ROOT; };
+		D7608AF725E4E84000839EA6 /* WorkoutLogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WorkoutLogTableViewCell.swift; path = onemoretimer/WorkOutLog/WorkoutLogTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		F558936BB46949DA4A22807F /* Pods-onemoretimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onemoretimer.debug.xcconfig"; path = "Target Support Files/Pods-onemoretimer/Pods-onemoretimer.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C98138D25E4130B001F06F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7257CF3A547AF815B69177D7 /* Pods_onemoretimer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69290715762975845A21E1ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F558936BB46949DA4A22807F /* Pods-onemoretimer.debug.xcconfig */,
+				28EAC01AF00042BCA53A2499 /* Pods-onemoretimer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7C15813625E4A5A500F5CE3B /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				7C65D47C25E785DA00653978 /* CountDown.wav */,
+				7C65D47A25E785DA00653978 /* EndWorkOut.mp3 */,
+				7C65D47B25E785DA00653978 /* HalfInWorkOut.mp3 */,
+				7C65D47E25E785DA00653978 /* PauseWorkOut.mp3 */,
+				7C65D47D25E785DA00653978 /* StartWorkOut.mp3 */,
+				7C65D47F25E785DB00653978 /* TenSecondLeft.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		7C15813725E4A5B500F5CE3B /* WorkOutLog */ = {
+			isa = PBXGroup;
+			children = (
+				D7608AEB25E4E78500839EA6 /* workoutLog.swift */,
+				D7608AEE25E4E7AE00839EA6 /* DBHelper.swift */,
+				D7608AF125E4E7EB00839EA6 /* WorkoutLogTableViewController.swift */,
+				D7608AF425E4E81800839EA6 /* InputViewController.swift */,
+				D7608AF725E4E84000839EA6 /* WorkoutLogTableViewCell.swift */,
+				7C15813825E4A5BC00F5CE3B /* Settings */,
+			);
+			path = WorkOutLog;
+			sourceTree = "<group>";
+		};
+		7C15813825E4A5BC00F5CE3B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				7CCF6CD825E68BBF00423BDF /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		7C15813925E4A5C700F5CE3B /* EMOM */ = {
+			isa = PBXGroup;
+			children = (
+				49E17E8325E5F826000F9AD9 /* EMOMViewController.swift */,
+				49E17E8625E5F838000F9AD9 /* EMOMTimerViewController.swift */,
+				49E17E8925E5F848000F9AD9 /* EMOMCommentViewController.swift */,
+				49E17E8C25E5F857000F9AD9 /* EMOMProgressBar.swift */,
+			);
+			path = EMOM;
+			sourceTree = "<group>";
+		};
+		7C15813A25E4A5D000F5CE3B /* ForTime */ = {
+			isa = PBXGroup;
+			children = (
+				759EC61E25E53C65007E1BA3 /* ForTimeViewController.swift */,
+				759EC62B25E54DAE007E1BA3 /* ForTimeTimerViewController.swift */,
+				7C1FD33B25E7A6EF0043055C /* ForTimeCommentViewController.swift */,
+				759EC62425E5458F007E1BA3 /* ForTimeProgressBar.swift */,
+			);
+			path = ForTime;
+			sourceTree = "<group>";
+		};
+		7C15813B25E4A5DA00F5CE3B /* AMRAP */ = {
+			isa = PBXGroup;
+			children = (
+				7C5646F925EA62A0006FCB37 /* AmrapCollectionViewCell.swift */,
+				7C5646F725EA629F006FCB37 /* AmrapCommentViewController.swift */,
+				7C5646F825EA62A0006FCB37 /* AmrapTimeProgressBar.swift */,
+				7C5646F525EA629E006FCB37 /* AmrapTimerViewController.swift */,
+				7C5646F625EA629F006FCB37 /* AmrapViewController.swift */,
+			);
+			path = AMRAP;
+			sourceTree = "<group>";
+		};
+		7C15813C25E4A5DF00F5CE3B /* Tabata */ = {
+			isa = PBXGroup;
+			children = (
+				32C1C2B425E602DC008A4FB9 /* TabataViewController.swift */,
+				32C1C2B725E602E9008A4FB9 /* TabataTimerViewController.swift */,
+				32C1C2BA25E602FA008A4FB9 /* TabataCommentViewController.swift */,
+				32C1C2BD25E60311008A4FB9 /* TabataProgressBar.swift */,
+			);
+			path = Tabata;
+			sourceTree = "<group>";
+		};
+		7C98138725E4130B001F06F6 = {
+			isa = PBXGroup;
+			children = (
+				7C98139225E4130B001F06F6 /* onemoretimer */,
+				7C98139125E4130B001F06F6 /* Products */,
+				69290715762975845A21E1ED /* Pods */,
+				9BA808B75B098FB9B272FBD5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7C98139125E4130B001F06F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C98139025E4130B001F06F6 /* onemoretimer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C98139225E4130B001F06F6 /* onemoretimer */ = {
+			isa = PBXGroup;
+			children = (
+				7CCF6CDB25E68C0500423BDF /* MainTimerMenu */,
+				7CCF6CC925E62F0100423BDF /* Lifting */,
+				7C15813B25E4A5DA00F5CE3B /* AMRAP */,
+				7C15813A25E4A5D000F5CE3B /* ForTime */,
+				7C15813925E4A5C700F5CE3B /* EMOM */,
+				7C15813C25E4A5DF00F5CE3B /* Tabata */,
+				7C15813725E4A5B500F5CE3B /* WorkOutLog */,
+				7C98139325E4130B001F06F6 /* AppDelegate.swift */,
+				7C98139525E4130B001F06F6 /* SceneDelegate.swift */,
+				7C98139925E4130B001F06F6 /* Main.storyboard */,
+				7C98139C25E4130D001F06F6 /* Assets.xcassets */,
+				7C98139E25E4130D001F06F6 /* LaunchScreen.storyboard */,
+				7C9813A125E4130D001F06F6 /* Info.plist */,
+				7C15813625E4A5A500F5CE3B /* Sounds */,
+				7C9813A825E41397001F06F6 /* Images */,
+			);
+			path = onemoretimer;
+			sourceTree = "<group>";
+		};
+		7C9813A825E41397001F06F6 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7C68386A25EA451600BABF97 /* TimerImage.png */,
+				49E17E8F25E5F99A000F9AD9 /* infinity.png */,
+				7C9813B625E413A4001F06F6 /* AMRAP.png */,
+				7C68386F25EA4DB900BABF97 /* buttonAMRAP.png */,
+				7C5646EF25EA5756006FCB37 /* buttonTabata.png */,
+				7C68387225EA4DBA00BABF97 /* buttonEMOM.png */,
+				7C68387025EA4DB900BABF97 /* buttonForTime.png */,
+				7C68386D25EA4DB800BABF97 /* buttonLifting.png */,
+				7C68387125EA4DBA00BABF97 /* buttonWorkOutLog.png */,
+				7C68387B25EA4E2400BABF97 /* buttonRemove.png */,
+				7C9813AE25E413A4001F06F6 /* buttonBackground.png */,
+				7C9813AC25E413A4001F06F6 /* EMOM.png */,
+				7C9813B525E413A4001F06F6 /* FORTIME.png */,
+				7C9813AD25E413A4001F06F6 /* goImage.png */,
+				7C9813B125E413A4001F06F6 /* LIFTING.png */,
+				7C9813B225E413A4001F06F6 /* Logo.jpeg */,
+				7C9813B725E413A4001F06F6 /* main.png */,
+				7C9813AB25E413A4001F06F6 /* plus.png */,
+				7C9813BA25E413A4001F06F6 /* smile.png */,
+				7C9813B425E413A4001F06F6 /* success.png */,
+				7C9813B025E413A4001F06F6 /* TABATA.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		7CCF6CC925E62F0100423BDF /* Lifting */ = {
+			isa = PBXGroup;
+			children = (
+				7CCF6CCA25E62F1000423BDF /* LiftingViewController.swift */,
+				7CCF6CCE25E62F1F00423BDF /* LiftingTimerViewController.swift */,
+				7CCF6CD125E62F2F00423BDF /* LiftingCommentViewController.swift */,
+				7CCF6CD425E62F6200423BDF /* LiftingProgressBar.swift */,
+			);
+			path = Lifting;
+			sourceTree = "<group>";
+		};
+		7CCF6CDB25E68C0500423BDF /* MainTimerMenu */ = {
+			isa = PBXGroup;
+			children = (
+				7CCF6CDD25E68C2600423BDF /* MainTimerViewController.swift */,
+			);
+			path = MainTimerMenu;
+			sourceTree = "<group>";
+		};
+		9BA808B75B098FB9B272FBD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65CEC08F3E81254AC43DAA9C /* Pods_onemoretimer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C98138F25E4130B001F06F6 /* onemoretimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C9813A425E4130D001F06F6 /* Build configuration list for PBXNativeTarget "onemoretimer" */;
+			buildPhases = (
+				72C306330BB1149BEF5E383E /* [CP] Check Pods Manifest.lock */,
+				7C98138C25E4130B001F06F6 /* Sources */,
+				7C98138D25E4130B001F06F6 /* Frameworks */,
+				7C98138E25E4130B001F06F6 /* Resources */,
+				63841461E311576461DDFD04 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = onemoretimer;
+			productName = onemoretimer;
+			productReference = 7C98139025E4130B001F06F6 /* onemoretimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C98138825E4130B001F06F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					7C98138F25E4130B001F06F6 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 7C98138B25E4130B001F06F6 /* Build configuration list for PBXProject "onemoretimer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7C98138725E4130B001F06F6;
+			productRefGroup = 7C98139125E4130B001F06F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C98138F25E4130B001F06F6 /* onemoretimer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C98138E25E4130B001F06F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C9813A025E4130D001F06F6 /* LaunchScreen.storyboard in Resources */,
+				7C68387325EA4DBA00BABF97 /* buttonLifting.png in Resources */,
+				7C9813CC25E413A4001F06F6 /* smile.png in Resources */,
+				7C68387625EA4DBA00BABF97 /* buttonForTime.png in Resources */,
+				7C9813C425E413A4001F06F6 /* Logo.jpeg in Resources */,
+				7C65D48325E785DB00653978 /* StartWorkOut.mp3 in Resources */,
+				7C9813C925E413A4001F06F6 /* main.png in Resources */,
+				49E17E9025E5F99A000F9AD9 /* infinity.png in Resources */,
+				7C68387825EA4DBA00BABF97 /* buttonEMOM.png in Resources */,
+				7C65D48025E785DB00653978 /* EndWorkOut.mp3 in Resources */,
+				7C9813C725E413A4001F06F6 /* FORTIME.png in Resources */,
+				7C68387C25EA4E2400BABF97 /* buttonRemove.png in Resources */,
+				7C68386B25EA451600BABF97 /* TimerImage.png in Resources */,
+				7C9813BE25E413A4001F06F6 /* EMOM.png in Resources */,
+				7C68387525EA4DBA00BABF97 /* buttonAMRAP.png in Resources */,
+				7C98139D25E4130D001F06F6 /* Assets.xcassets in Resources */,
+				7C65D48425E785DB00653978 /* PauseWorkOut.mp3 in Resources */,
+				7C9813C625E413A4001F06F6 /* success.png in Resources */,
+				7C98139B25E4130B001F06F6 /* Main.storyboard in Resources */,
+				7C9813BD25E413A4001F06F6 /* plus.png in Resources */,
+				7C5646F025EA5757006FCB37 /* buttonTabata.png in Resources */,
+				7C9813C225E413A4001F06F6 /* TABATA.png in Resources */,
+				7C9813C025E413A4001F06F6 /* buttonBackground.png in Resources */,
+				7C65D48125E785DB00653978 /* HalfInWorkOut.mp3 in Resources */,
+				7C9813C825E413A4001F06F6 /* AMRAP.png in Resources */,
+				7C9813BF25E413A4001F06F6 /* goImage.png in Resources */,
+				7C68387725EA4DBA00BABF97 /* buttonWorkOutLog.png in Resources */,
+				7C65D48525E785DB00653978 /* TenSecondLeft.mp3 in Resources */,
+				7C9813C325E413A4001F06F6 /* LIFTING.png in Resources */,
+				7C65D48225E785DB00653978 /* CountDown.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63841461E311576461DDFD04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-onemoretimer/Pods-onemoretimer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-onemoretimer/Pods-onemoretimer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-onemoretimer/Pods-onemoretimer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72C306330BB1149BEF5E383E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-onemoretimer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C98138C25E4130B001F06F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7608AEC25E4E78500839EA6 /* workoutLog.swift in Sources */,
+				7C5646FD25EA62A0006FCB37 /* AmrapTimeProgressBar.swift in Sources */,
+				7C5646FA25EA62A0006FCB37 /* AmrapTimerViewController.swift in Sources */,
+				32C1C2BE25E60311008A4FB9 /* TabataProgressBar.swift in Sources */,
+				7C98139425E4130B001F06F6 /* AppDelegate.swift in Sources */,
+				49E17E8D25E5F857000F9AD9 /* EMOMProgressBar.swift in Sources */,
+				7CCF6CD525E62F6200423BDF /* LiftingProgressBar.swift in Sources */,
+				7CCF6CD225E62F2F00423BDF /* LiftingCommentViewController.swift in Sources */,
+				49E17E8725E5F838000F9AD9 /* EMOMTimerViewController.swift in Sources */,
+				7CCF6CCB25E62F1000423BDF /* LiftingViewController.swift in Sources */,
+				7C98139625E4130B001F06F6 /* SceneDelegate.swift in Sources */,
+				7C5646FB25EA62A0006FCB37 /* AmrapViewController.swift in Sources */,
+				49E17E8A25E5F848000F9AD9 /* EMOMCommentViewController.swift in Sources */,
+				32C1C2B525E602DC008A4FB9 /* TabataViewController.swift in Sources */,
+				32C1C2B825E602E9008A4FB9 /* TabataTimerViewController.swift in Sources */,
+				759EC61F25E53C65007E1BA3 /* ForTimeViewController.swift in Sources */,
+				D7608AF525E4E81800839EA6 /* InputViewController.swift in Sources */,
+				D7608AF825E4E84000839EA6 /* WorkoutLogTableViewCell.swift in Sources */,
+				7CCF6CDE25E68C2600423BDF /* MainTimerViewController.swift in Sources */,
+				7CCF6CD925E68BBF00423BDF /* SettingsViewController.swift in Sources */,
+				D7608AF225E4E7EB00839EA6 /* WorkoutLogTableViewController.swift in Sources */,
+				7C5646FC25EA62A0006FCB37 /* AmrapCommentViewController.swift in Sources */,
+				49E17E8425E5F826000F9AD9 /* EMOMViewController.swift in Sources */,
+				7C1FD33C25E7A6EF0043055C /* ForTimeCommentViewController.swift in Sources */,
+				D7608AEF25E4E7AE00839EA6 /* DBHelper.swift in Sources */,
+				7CCF6CCF25E62F1F00423BDF /* LiftingTimerViewController.swift in Sources */,
+				759EC62C25E54DAE007E1BA3 /* ForTimeTimerViewController.swift in Sources */,
+				32C1C2BB25E602FA008A4FB9 /* TabataCommentViewController.swift in Sources */,
+				7C5646FE25EA62A0006FCB37 /* AmrapCollectionViewCell.swift in Sources */,
+				759EC62525E5458F007E1BA3 /* ForTimeProgressBar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7C98139925E4130B001F06F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C98139A25E4130B001F06F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7C98139E25E4130D001F06F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C98139F25E4130D001F06F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7C9813A225E4130D001F06F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7C9813A325E4130D001F06F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C9813A525E4130D001F06F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F558936BB46949DA4A22807F /* Pods-onemoretimer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RC3G596KWT;
+				INFOPLIST_FILE = onemoretimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onemore.onemoretimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7C9813A625E4130D001F06F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28EAC01AF00042BCA53A2499 /* Pods-onemoretimer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RC3G596KWT;
+				INFOPLIST_FILE = onemoretimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onemore.onemoretimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C98138B25E4130B001F06F6 /* Build configuration list for PBXProject "onemoretimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C9813A225E4130D001F06F6 /* Debug */,
+				7C9813A325E4130D001F06F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C9813A425E4130D001F06F6 /* Build configuration list for PBXNativeTarget "onemoretimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C9813A525E4130D001F06F6 /* Debug */,
+				7C9813A625E4130D001F06F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7C98138825E4130B001F06F6 /* Project object */;
+}
