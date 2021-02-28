@@ -40,10 +40,4 @@ class MainTimerViewController: UIViewController {
         }
   
     }
-
-    
-  
-
-    
-
 }

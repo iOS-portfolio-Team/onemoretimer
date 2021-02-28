@@ -11,9 +11,12 @@ import SimpleAlertPickers
 class AmrapViewController: UIViewController,
                            UICollectionViewDelegate,UICollectionViewDataSource{
 
-    @IBOutlet weak var AmrapCvList: UICollectionView!
-    
+   
+   
+    @IBOutlet weak var collectionViewAmrap: UICollectionView!
     @IBOutlet weak var buttonRound: UIButton!
+    @IBOutlet weak var viewAmrap: UIView!
+    @IBOutlet weak var buttonStart: UIButton!
     
     // 피커뷰에 들어가는 값 배열
     var timesRestPicker: [String] = []
@@ -35,8 +38,8 @@ class AmrapViewController: UIViewController,
     var pickedValueExercise: [String] = ["02:00 분"]
     
     // 셋팅된 라운드 배열
-    var rest=["30초"]
-    var exercise=["2분"]
+    var rest = ["30초"]
+    var exercise = ["2분"]
     var sendRest: [Int] = [30]
     var sendExercise: [Int] = [120]
     
@@ -55,23 +58,15 @@ class AmrapViewController: UIViewController,
         buttonRound.isEnabled = false
         buttonRound.layer.masksToBounds = true
         buttonRound.layer.cornerRadius = 20
-        // 배열 셋팅
+        viewAmrap.layer.masksToBounds = true
+        viewAmrap.layer.cornerRadius = 20
+        buttonStart.layer.masksToBounds = true
+        buttonStart.layer.cornerRadius = 20
+        // set Array
         appendArr()
         
-        
-
-        
-        
-        // Do any additional setup after loading the view.
     }
 
-    
-    // amarpCell
-    
-
-    
-
-    
     @IBAction func buttonAddRound(_ sender: UIButton) {
         buttonRound.setTitle("\(rest.count+1)회", for: .normal)
         rest.append("30초")
@@ -80,7 +75,8 @@ class AmrapViewController: UIViewController,
         sendExercise.append(120)
         pickedValueRest.append("00:30 분")
         pickedValueExercise.append("02:00 분")
-        AmrapCvList.reloadData()
+        collectionViewAmrap.reloadData()
+        print(rest)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -90,109 +86,79 @@ class AmrapViewController: UIViewController,
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = AmrapCvList.dequeueReusableCell(withReuseIdentifier: "amarpCell", for: indexPath) as! AmrapCollectionViewCell
+        let cell = collectionViewAmrap.dequeueReusableCell(withReuseIdentifier: "amrapCell", for: indexPath) as! AmrapCollectionViewCell
         
-       
         
+        cell.layer.masksToBounds = true
+        cell.layer.cornerRadius = 20
         cell.buttonExercise.layer.masksToBounds = true
         cell.buttonExercise.layer.cornerRadius = 8
         cell.buttonRest.layer.masksToBounds = true
         cell.buttonRest.layer.cornerRadius = 8
         
-        cell.labelRound.text = "\(indexPath.row+1) Round"
+        cell.labelRound.text = "\(indexPath.row+1) Work out"
         cell.buttonRest.setTitle(rest[indexPath.row], for: .normal)
         cell.buttonExercise.setTitle(exercise[indexPath.row], for: .normal)
         
-    
-        // X (삭제) 버튼 action
+   
         cell.buttonRoundDelete.tag = indexPath.row
         cell.buttonRoundDelete.addTarget(self, action: #selector(roundDeleteAction), for: .touchUpInside)
-        
-        // 휴식버튼 클릭액션
+       
         cell.buttonRest.tag = indexPath.row
         cell.buttonRest.addTarget(self, action: #selector(restButtonAction), for: .touchUpInside)
-        
-        // 운동버튼 클릭액션
+       
         cell.buttonExercise.tag = indexPath.row
         cell.buttonExercise.addTarget(self, action: #selector(exerciseButtonAction), for: .touchUpInside)
         
        
         return cell
     }
-    
-    // 운동버튼 클릭액션
+  
     @objc func exerciseButtonAction(sender:UIButton){
         let indexPath = IndexPath(row: sender.tag, section: 0)
-        // Alert 형식
+
         let alert = UIAlertController( title: "시간을 정해주세요", message: nil, preferredStyle: UIAlertController.Style.alert)
         
-        // 1~10까지를 String 타입 배열로 구성
-//        let times: [String] = (1...10).map { String($0) }
-        
-        // addPickerView에 매개변수로 있는 values 자체가 [[String]] 형식이라 맞춰서 써야 될거같습니다.
         let pickerViewValues: [[String]] = [timesExercisePicker]
-        let pickerViewSelectedValue: PickerViewViewController.Index = (column: 0, row: timesExercisePicker.firstIndex(of: pickedValueExercise[indexPath.row]) ?? 0) // picker가 생성될 때 pickedValue가 선택된 상태로 alert가 뜸.
-        
-        // alert에 picker 추가해주기 + async를 통해 버튼의 text 바꿔줌.
-        // picker 선택시 action은 이 안에 써주시면 됩니다.
+        let pickerViewSelectedValue: PickerViewViewController.Index = (column: 0, row: timesExercisePicker.firstIndex(of: pickedValueExercise[indexPath.row]) ?? 0)
         alert.addPickerView(values: pickerViewValues, initialSelection: pickerViewSelectedValue) { vc, picker, index, values in
             DispatchQueue.main.async {
                 UIView.animate(withDuration: 1) {
-                    // 피커뷰의 값을 arrExercise해당 인덱스에다가 넣음
-//                    self.pickedValueRest = self.timesRest[index.row]
-//                    self.arrRest[indexPath.row] = self.buttonTimeRest[index.row]
-//                    self.checkCollectionView.reloadData()
+      
                     self.pickedValueExercise[indexPath.row] = self.timesExercisePicker[index.row]
                     self.exercise[indexPath.row] = self.timeExercise[index.row]
                     self.sendExercise[indexPath.row] = self.sendTimeExerciseArr[index.row]
                     
                     
-                    self.AmrapCvList.reloadData()
+                    self.collectionViewAmrap.reloadData()
                
                 }
             }
             
         }
-        
-        
-        
+    
         alert.addAction(title: "완료", style: .cancel)
         alert.show()
     }
-    
-    
-    
-    // 휴식버튼 클릭액션
+
     @objc func restButtonAction(sender:UIButton){
         
         let indexPath = IndexPath(row: sender.tag, section: 0)
         print(indexPath.row)
         print(pickedValueRest.count)
-        // Alert 형식
+     
         let alert = UIAlertController( title: "시간을 정해주세요", message: nil, preferredStyle: UIAlertController.Style.alert)
-        
-        // 1~10까지를 String 타입 배열로 구성
-//        let times: [String] = (1...10).map { String($0) }
-        
-        // addPickerView에 매개변수로 있는 values 자체가 [[String]] 형식이라 맞춰서 써야 될거같습니다.
         let pickerViewValues: [[String]] = [timesRestPicker]
-        let pickerViewSelectedValue: PickerViewViewController.Index = (column: 0, row: timesRestPicker.firstIndex(of: pickedValueRest[indexPath.row]) ?? 0) // picker가 생성될 때 pickedValue가 선택된 상태로 alert가 뜸.
-        
-        // alert에 picker 추가해주기 + async를 통해 버튼의 text 바꿔줌.
-        // picker 선택시 action은 이 안에 써주시면 됩니다.
+        let pickerViewSelectedValue: PickerViewViewController.Index = (column: 0, row: timesRestPicker.firstIndex(of: pickedValueRest[indexPath.row]) ?? 0)
         alert.addPickerView(values: pickerViewValues, initialSelection: pickerViewSelectedValue) { vc, picker, index, values in
             DispatchQueue.main.async {
                 UIView.animate(withDuration: 1) {
-                    // 피커뷰의 값을 arrExercise해당 인덱스에다가 넣음
-//                    self.pickedValueRest = self.timesRest[index.row]
-//                    self.arrRest[indexPath.row] = self.buttonTimeRest[index.row]
-//                    self.checkCollectionView.reloadData()
                     self.pickedValueRest[indexPath.row] = self.timesRestPicker[index.row]
                     self.rest[indexPath.row] = self.timeRest[index.row]
                     self.sendRest[indexPath.row] = self.sendTimeRestArr[index.row]
                     
                     
-                    self.AmrapCvList.reloadData()
+                    self.collectionViewAmrap.reloadData()
                 }
             }
         }
@@ -203,7 +169,7 @@ class AmrapViewController: UIViewController,
     }
     
     
-    // delete 버튼 클릭애션
+    // when delete button is clicked
     @objc func roundDeleteAction(sender:UIButton){
         let indexPath = IndexPath(row: sender.tag, section: 0)
         
@@ -215,14 +181,14 @@ class AmrapViewController: UIViewController,
             self.sendRest.remove(at: indexPath.row)
             self.sendExercise.remove(at: indexPath.row)
         }
-        AmrapCvList.reloadData()
+        collectionViewAmrap.reloadData()
 
     }
 
     
-    // 배열값 새팅
+    // seting array
     func appendArr(){
-        // 0 ~ 5 분 15초 단위
+        
         for i in 1...20{
             if i*15 % 60 == 0{
                 minute += 1
@@ -253,7 +219,6 @@ class AmrapViewController: UIViewController,
             sendTimeExerciseArr.append(i*15)
         }
         
-        // 6 ~ 100 분 1분 단우
         for i in 6...100{
             if i<10{
                 timesRestPicker.append("0\(i):00 분")
@@ -280,11 +245,12 @@ class AmrapViewController: UIViewController,
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
         
-        if segue.identifier == "amrapTimeSegue"{
+        if segue.identifier == "AmrapSegue"{
             let timerView = segue.destination as! AmrapTimerViewController
             timerView.receiveItem(sendRest,sendExercise)
         }
     }
     
-}                                                                                                                                                                                                           
+}
+
 

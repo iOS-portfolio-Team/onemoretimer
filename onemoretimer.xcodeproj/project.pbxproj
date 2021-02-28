@@ -21,7 +21,6 @@
 		759EC62525E5458F007E1BA3 /* ForTimeProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759EC62425E5458F007E1BA3 /* ForTimeProgressBar.swift */; };
 		759EC62C25E54DAE007E1BA3 /* ForTimeTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759EC62B25E54DAE007E1BA3 /* ForTimeTimerViewController.swift */; };
 		7C1FD33C25E7A6EF0043055C /* ForTimeCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1FD33B25E7A6EF0043055C /* ForTimeCommentViewController.swift */; };
-		7C5646F025EA5757006FCB37 /* buttonTabata.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C5646EF25EA5756006FCB37 /* buttonTabata.png */; };
 		7C5646FA25EA62A0006FCB37 /* AmrapTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5646F525EA629E006FCB37 /* AmrapTimerViewController.swift */; };
 		7C5646FB25EA62A0006FCB37 /* AmrapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5646F625EA629F006FCB37 /* AmrapViewController.swift */; };
 		7C5646FC25EA62A0006FCB37 /* AmrapCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5646F725EA629F006FCB37 /* AmrapCommentViewController.swift */; };
@@ -39,7 +38,7 @@
 		7C68387625EA4DBA00BABF97 /* buttonForTime.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C68387025EA4DB900BABF97 /* buttonForTime.png */; };
 		7C68387725EA4DBA00BABF97 /* buttonWorkOutLog.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C68387125EA4DBA00BABF97 /* buttonWorkOutLog.png */; };
 		7C68387825EA4DBA00BABF97 /* buttonEMOM.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C68387225EA4DBA00BABF97 /* buttonEMOM.png */; };
-		7C68387C25EA4E2400BABF97 /* buttonRemove.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C68387B25EA4E2400BABF97 /* buttonRemove.png */; };
+		7C6EE8B825EBB49C0026AF43 /* buttonRemove.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6EE8B725EBB49C0026AF43 /* buttonRemove.png */; };
 		7C98139425E4130B001F06F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C98139325E4130B001F06F6 /* AppDelegate.swift */; };
 		7C98139625E4130B001F06F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C98139525E4130B001F06F6 /* SceneDelegate.swift */; };
 		7C98139B25E4130B001F06F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C98139925E4130B001F06F6 /* Main.storyboard */; };
@@ -57,6 +56,9 @@
 		7C9813C825E413A4001F06F6 /* AMRAP.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9813B625E413A4001F06F6 /* AMRAP.png */; };
 		7C9813C925E413A4001F06F6 /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9813B725E413A4001F06F6 /* main.png */; };
 		7C9813CC25E413A4001F06F6 /* smile.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9813BA25E413A4001F06F6 /* smile.png */; };
+		7CBC9AED25EB746600303117 /* buttonTabata.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBC9AEC25EB746500303117 /* buttonTabata.png */; };
+		7CBC9AF125EB7A8F00303117 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7CBC9AF025EB7A8F00303117 /* Settings.bundle */; };
+		7CBC9AF425EB8D0B00303117 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBC9AF325EB8D0B00303117 /* InputViewController.swift */; };
 		7CCF6CCB25E62F1000423BDF /* LiftingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF6CCA25E62F1000423BDF /* LiftingViewController.swift */; };
 		7CCF6CCF25E62F1F00423BDF /* LiftingTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF6CCE25E62F1F00423BDF /* LiftingTimerViewController.swift */; };
 		7CCF6CD225E62F2F00423BDF /* LiftingCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF6CD125E62F2F00423BDF /* LiftingCommentViewController.swift */; };
@@ -66,7 +68,6 @@
 		D7608AEC25E4E78500839EA6 /* workoutLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7608AEB25E4E78500839EA6 /* workoutLog.swift */; };
 		D7608AEF25E4E7AE00839EA6 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7608AEE25E4E7AE00839EA6 /* DBHelper.swift */; };
 		D7608AF225E4E7EB00839EA6 /* WorkoutLogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7608AF125E4E7EB00839EA6 /* WorkoutLogTableViewController.swift */; };
-		D7608AF525E4E81800839EA6 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7608AF425E4E81800839EA6 /* InputViewController.swift */; };
 		D7608AF825E4E84000839EA6 /* WorkoutLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7608AF725E4E84000839EA6 /* WorkoutLogTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,7 +87,6 @@
 		759EC62425E5458F007E1BA3 /* ForTimeProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForTimeProgressBar.swift; sourceTree = "<group>"; };
 		759EC62B25E54DAE007E1BA3 /* ForTimeTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ForTimeTimerViewController.swift; path = onemoretimer/ForTime/ForTimeTimerViewController.swift; sourceTree = SOURCE_ROOT; };
 		7C1FD33B25E7A6EF0043055C /* ForTimeCommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForTimeCommentViewController.swift; path = onemoretimer/ForTime/ForTimeCommentViewController.swift; sourceTree = SOURCE_ROOT; };
-		7C5646EF25EA5756006FCB37 /* buttonTabata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonTabata.png; sourceTree = "<group>"; };
 		7C5646F525EA629E006FCB37 /* AmrapTimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmrapTimerViewController.swift; sourceTree = "<group>"; };
 		7C5646F625EA629F006FCB37 /* AmrapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmrapViewController.swift; sourceTree = "<group>"; };
 		7C5646F725EA629F006FCB37 /* AmrapCommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmrapCommentViewController.swift; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 		7C68387025EA4DB900BABF97 /* buttonForTime.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonForTime.png; sourceTree = "<group>"; };
 		7C68387125EA4DBA00BABF97 /* buttonWorkOutLog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonWorkOutLog.png; sourceTree = "<group>"; };
 		7C68387225EA4DBA00BABF97 /* buttonEMOM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonEMOM.png; sourceTree = "<group>"; };
-		7C68387B25EA4E2400BABF97 /* buttonRemove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonRemove.png; sourceTree = "<group>"; };
+		7C6EE8B725EBB49C0026AF43 /* buttonRemove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonRemove.png; path = "../../../../../../Downloads/아카이브 (4)/buttonRemove.png"; sourceTree = "<group>"; };
 		7C98139025E4130B001F06F6 /* onemoretimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = onemoretimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C98139325E4130B001F06F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C98139525E4130B001F06F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +124,9 @@
 		7C9813B625E413A4001F06F6 /* AMRAP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AMRAP.png; sourceTree = "<group>"; };
 		7C9813B725E413A4001F06F6 /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main.png; sourceTree = "<group>"; };
 		7C9813BA25E413A4001F06F6 /* smile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smile.png; sourceTree = "<group>"; };
+		7CBC9AEC25EB746500303117 /* buttonTabata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonTabata.png; sourceTree = "<group>"; };
+		7CBC9AF025EB7A8F00303117 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		7CBC9AF325EB8D0B00303117 /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		7CCF6CCA25E62F1000423BDF /* LiftingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftingViewController.swift; sourceTree = "<group>"; };
 		7CCF6CCE25E62F1F00423BDF /* LiftingTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftingTimerViewController.swift; sourceTree = "<group>"; };
 		7CCF6CD125E62F2F00423BDF /* LiftingCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftingCommentViewController.swift; sourceTree = "<group>"; };
@@ -133,7 +136,6 @@
 		D7608AEB25E4E78500839EA6 /* workoutLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = workoutLog.swift; path = onemoretimer/WorkOutLog/workoutLog.swift; sourceTree = SOURCE_ROOT; };
 		D7608AEE25E4E7AE00839EA6 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DBHelper.swift; path = onemoretimer/WorkOutLog/DBHelper.swift; sourceTree = SOURCE_ROOT; };
 		D7608AF125E4E7EB00839EA6 /* WorkoutLogTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WorkoutLogTableViewController.swift; path = onemoretimer/WorkOutLog/WorkoutLogTableViewController.swift; sourceTree = SOURCE_ROOT; };
-		D7608AF425E4E81800839EA6 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InputViewController.swift; path = onemoretimer/WorkOutLog/InputViewController.swift; sourceTree = SOURCE_ROOT; };
 		D7608AF725E4E84000839EA6 /* WorkoutLogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WorkoutLogTableViewCell.swift; path = onemoretimer/WorkOutLog/WorkoutLogTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		F558936BB46949DA4A22807F /* Pods-onemoretimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onemoretimer.debug.xcconfig"; path = "Target Support Files/Pods-onemoretimer/Pods-onemoretimer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,9 +178,9 @@
 			isa = PBXGroup;
 			children = (
 				D7608AEB25E4E78500839EA6 /* workoutLog.swift */,
+				7CBC9AF325EB8D0B00303117 /* InputViewController.swift */,
 				D7608AEE25E4E7AE00839EA6 /* DBHelper.swift */,
 				D7608AF125E4E7EB00839EA6 /* WorkoutLogTableViewController.swift */,
-				D7608AF425E4E81800839EA6 /* InputViewController.swift */,
 				D7608AF725E4E84000839EA6 /* WorkoutLogTableViewCell.swift */,
 				7C15813825E4A5BC00F5CE3B /* Settings */,
 			);
@@ -218,11 +220,11 @@
 		7C15813B25E4A5DA00F5CE3B /* AMRAP */ = {
 			isa = PBXGroup;
 			children = (
-				7C5646F925EA62A0006FCB37 /* AmrapCollectionViewCell.swift */,
-				7C5646F725EA629F006FCB37 /* AmrapCommentViewController.swift */,
-				7C5646F825EA62A0006FCB37 /* AmrapTimeProgressBar.swift */,
-				7C5646F525EA629E006FCB37 /* AmrapTimerViewController.swift */,
 				7C5646F625EA629F006FCB37 /* AmrapViewController.swift */,
+				7C5646F525EA629E006FCB37 /* AmrapTimerViewController.swift */,
+				7C5646F925EA62A0006FCB37 /* AmrapCollectionViewCell.swift */,
+				7C5646F825EA62A0006FCB37 /* AmrapTimeProgressBar.swift */,
+				7C5646F725EA629F006FCB37 /* AmrapCommentViewController.swift */,
 			);
 			path = AMRAP;
 			sourceTree = "<group>";
@@ -241,6 +243,7 @@
 		7C98138725E4130B001F06F6 = {
 			isa = PBXGroup;
 			children = (
+				7CBC9AF025EB7A8F00303117 /* Settings.bundle */,
 				7C98139225E4130B001F06F6 /* onemoretimer */,
 				7C98139125E4130B001F06F6 /* Products */,
 				69290715762975845A21E1ED /* Pods */,
@@ -281,16 +284,16 @@
 		7C9813A825E41397001F06F6 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7C6EE8B725EBB49C0026AF43 /* buttonRemove.png */,
 				7C68386A25EA451600BABF97 /* TimerImage.png */,
 				49E17E8F25E5F99A000F9AD9 /* infinity.png */,
 				7C9813B625E413A4001F06F6 /* AMRAP.png */,
 				7C68386F25EA4DB900BABF97 /* buttonAMRAP.png */,
-				7C5646EF25EA5756006FCB37 /* buttonTabata.png */,
 				7C68387225EA4DBA00BABF97 /* buttonEMOM.png */,
+				7CBC9AEC25EB746500303117 /* buttonTabata.png */,
 				7C68387025EA4DB900BABF97 /* buttonForTime.png */,
 				7C68386D25EA4DB800BABF97 /* buttonLifting.png */,
 				7C68387125EA4DBA00BABF97 /* buttonWorkOutLog.png */,
-				7C68387B25EA4E2400BABF97 /* buttonRemove.png */,
 				7C9813AE25E413A4001F06F6 /* buttonBackground.png */,
 				7C9813AC25E413A4001F06F6 /* EMOM.png */,
 				7C9813B525E413A4001F06F6 /* FORTIME.png */,
@@ -403,8 +406,8 @@
 				7C68387825EA4DBA00BABF97 /* buttonEMOM.png in Resources */,
 				7C65D48025E785DB00653978 /* EndWorkOut.mp3 in Resources */,
 				7C9813C725E413A4001F06F6 /* FORTIME.png in Resources */,
-				7C68387C25EA4E2400BABF97 /* buttonRemove.png in Resources */,
 				7C68386B25EA451600BABF97 /* TimerImage.png in Resources */,
+				7C6EE8B825EBB49C0026AF43 /* buttonRemove.png in Resources */,
 				7C9813BE25E413A4001F06F6 /* EMOM.png in Resources */,
 				7C68387525EA4DBA00BABF97 /* buttonAMRAP.png in Resources */,
 				7C98139D25E4130D001F06F6 /* Assets.xcassets in Resources */,
@@ -412,11 +415,12 @@
 				7C9813C625E413A4001F06F6 /* success.png in Resources */,
 				7C98139B25E4130B001F06F6 /* Main.storyboard in Resources */,
 				7C9813BD25E413A4001F06F6 /* plus.png in Resources */,
-				7C5646F025EA5757006FCB37 /* buttonTabata.png in Resources */,
+				7CBC9AED25EB746600303117 /* buttonTabata.png in Resources */,
 				7C9813C225E413A4001F06F6 /* TABATA.png in Resources */,
 				7C9813C025E413A4001F06F6 /* buttonBackground.png in Resources */,
 				7C65D48125E785DB00653978 /* HalfInWorkOut.mp3 in Resources */,
 				7C9813C825E413A4001F06F6 /* AMRAP.png in Resources */,
+				7CBC9AF125EB7A8F00303117 /* Settings.bundle in Resources */,
 				7C9813BF25E413A4001F06F6 /* goImage.png in Resources */,
 				7C68387725EA4DBA00BABF97 /* buttonWorkOutLog.png in Resources */,
 				7C65D48525E785DB00653978 /* TenSecondLeft.mp3 in Resources */,
@@ -490,12 +494,12 @@
 				32C1C2B525E602DC008A4FB9 /* TabataViewController.swift in Sources */,
 				32C1C2B825E602E9008A4FB9 /* TabataTimerViewController.swift in Sources */,
 				759EC61F25E53C65007E1BA3 /* ForTimeViewController.swift in Sources */,
-				D7608AF525E4E81800839EA6 /* InputViewController.swift in Sources */,
 				D7608AF825E4E84000839EA6 /* WorkoutLogTableViewCell.swift in Sources */,
 				7CCF6CDE25E68C2600423BDF /* MainTimerViewController.swift in Sources */,
 				7CCF6CD925E68BBF00423BDF /* SettingsViewController.swift in Sources */,
 				D7608AF225E4E7EB00839EA6 /* WorkoutLogTableViewController.swift in Sources */,
 				7C5646FC25EA62A0006FCB37 /* AmrapCommentViewController.swift in Sources */,
+				7CBC9AF425EB8D0B00303117 /* InputViewController.swift in Sources */,
 				49E17E8425E5F826000F9AD9 /* EMOMViewController.swift in Sources */,
 				7C1FD33C25E7A6EF0043055C /* ForTimeCommentViewController.swift in Sources */,
 				D7608AEF25E4E7AE00839EA6 /* DBHelper.swift in Sources */,

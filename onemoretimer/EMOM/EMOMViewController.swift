@@ -16,8 +16,7 @@ class EMOMViewController: UIViewController {
     @IBOutlet weak var buttonTimeCount: UIButton!
     @IBOutlet weak var switchButtonOff: UISwitch!
     @IBOutlet weak var buttonStartNext: UIButton!
-    @IBOutlet weak var buttonRoundImage: UIButton!
-    @IBOutlet weak var buttonTimeImage: UIButton!
+  
     
     // Variables for Picker view
     var countTimeValue: String?
@@ -73,7 +72,7 @@ class EMOMViewController: UIViewController {
                 UIView.animate(withDuration: 1) { [self] in
                     countTimeValue = buttonCount[index.row]
                     buttonRoundCount.setTitle(countTimeValue!, for: .normal)
-                    labelTotalComment.text = "\(String(describing: selectedTimeValue!))씩 \(String(describing: (countTimeValue!)))라운드를 진행합니다."
+                    labelTotalComment.text = " \(String(selectedTimeValue!))씩 \(String(countTimeValue!))라운드를 진행합니다."
                     
                 }
             }
@@ -99,7 +98,7 @@ class EMOMViewController: UIViewController {
                     buttonTimeCount.setTitle(sendTime, for: .normal)
                     sendSecond = arraySecond[index.row]
                     
-                    labelTotalComment.text = "\(String(describing: selectedTimeValue))씩 \(String(describing: (countTimeValue!)))라운드를 진행합니다."
+                    labelTotalComment.text = " \(String(selectedTimeValue!))씩 \(String(countTimeValue!))라운드를 진행합니다."
                 }
             }
         }
@@ -118,12 +117,12 @@ class EMOMViewController: UIViewController {
             buttonRoundCount.isEnabled = false
             buttonTimeCount.isEnabled = true
             self.labelTotalComment.isHidden = true
-            buttonRoundImage.setImage(UIImage(named:"infinity.png")?.withRenderingMode(.alwaysOriginal), for: .normal)
+            buttonRoundCount.setImage(UIImage(named:"infinity.png")?.withRenderingMode(.alwaysOriginal), for: .normal)
             labelTotalComment.text = "\(String(describing: selectedTimeValue))씩 \(String(describing: (countTimeValue!)))라운드를 진행합니다."
         default:
             buttonRoundCount.isEnabled = true
             buttonTimeCount.isEnabled = true
-            buttonRoundImage.setImage(UIImage(named:""),for: .normal)
+            buttonRoundCount.setImage(UIImage(named:""),for: .normal)
             labelTotalComment.text = "\(String(describing: selectedTimeValue))씩 무제한 라운드를 진행합니다."
         }
     }

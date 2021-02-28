@@ -10,7 +10,6 @@ import UIKit
 class AmrapCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var buttonRoundDelete: UIButton!
-    
     @IBOutlet weak var labelRound: UILabel!
     @IBOutlet weak var buttonRest: UIButton!
     @IBOutlet weak var buttonExercise: UIButton!

@@ -43,7 +43,7 @@ class EMOMTimerViewController: UIViewController {
     let countUpSelector: Selector = #selector(EMOMTimerViewController.updateTime)
     let countDownSelector: Selector = #selector(EMOMTimerViewController.countDownTime)
     static var timeOut = 0
-    let interval = 0.0001
+    let interval = 1.0
     var countUpTimer = Timer()
     var countDownTimer = Timer()
     var countDown = UserDefaults.standard.integer(forKey: "countOffTime")
@@ -101,7 +101,7 @@ class EMOMTimerViewController: UIViewController {
         
         // Unlimited mode is turned on
         if getInfinity == true{
-            buttonTerminate.isHidden = false
+            buttonTerminate.isHidden = true
             buttonTerminate.isEnabled = false
             buttonTerminate.setTitle("종료", for: .normal)
             buttonTerminate.layer.masksToBounds = true
@@ -143,11 +143,10 @@ class EMOMTimerViewController: UIViewController {
                 progressCirclePause(nowTime: Double(countUp))
                 playSound(file: "PauseWorkOut", ext: "mp3")
                 countUpTimer.invalidate()
-                labelTimerStart.text = "pause"
+                labelTimerStart.text = "Pause"
                 
                 //counter tab button is enabled
                 countUpButtonOnOff = false
-                buttonTerminate.isEnabled = true
                 //Depends on countButtonOnOff UI color is changed
                 buttonTerminate.backgroundColor = UIColor.orange
                 labelTimerStart.textColor = UIColor.gray
@@ -168,6 +167,12 @@ class EMOMTimerViewController: UIViewController {
             if countDownButtonStatus{
                 labelTotalComment.isHidden = false
                 imageViewFinish.isHidden = true
+                
+                if getInfinity == true{
+                    buttonTerminate.isHidden = false
+                    buttonTerminate.isEnabled = true
+                    buttonTerminate.backgroundColor = UIColor.orange
+                }
                 playSound(file: "StartWorkOut", ext: "mp3")
                 labelTimerStart.text = "\(countDown)"
                 countDownTimer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: countDownSelector, userInfo: nil, repeats: true)
@@ -226,13 +231,16 @@ class EMOMTimerViewController: UIViewController {
         getSecond = second
         getCount = count
         getInfinity = infinity
-        print("카운트 : \(getCount)")
     }
     
     // count down
     @objc  func countDownTime(){
         labelTimerStart.text = "\(countDown)"
         countDown -= 1
+        if countDown == 2{
+            playSound(file: "CountDown", ext: "wav")
+        }
+        
         if countDown == -1{
             countDownTimer.invalidate()
             countUpButtonStatus = true
@@ -278,7 +286,7 @@ class EMOMTimerViewController: UIViewController {
         if getInfinity == true && countUp == EMOMTimerViewController.timeOut
         {
             roundCount += 1
-            labelTotalComment.text = "무제한모드 \(roundCount)회차"
+            labelTotalComment.text = "무제한모드 \(roundCount)라운드"
             countUp = 0
             minute = 0
             second = 0
@@ -288,14 +296,13 @@ class EMOMTimerViewController: UIViewController {
         else if getInfinity == false && countUp == EMOMTimerViewController.timeOut
         {
             roundCount += 1
-            labelTotalComment.text = "\(getCount)회중 \(roundCount)회차"
+            labelTotalComment.text = "\(getCount)라운드중 \(roundCount)라운드"
             buttonTerminate.isHidden = true
             countUp = 0
             minute = 0
             second = 0
             
             if Int(getCount)!  == roundCount{
-                playSound(file: "EndWorkOut", ext: "mp3")
                 labelFinishMent.isHidden = false
                 labelFinishMent.text = randomText[random]
                 isTimerEnd = true

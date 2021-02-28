@@ -24,23 +24,25 @@ class ForTimeProgressBar: UIView {
 
     func addProgressBar(radius: CGFloat, progress: CGFloat) {
 
-        let lineWidth = radius*0.100 // 프로그레스바 두께 높을수록 두꺼워짐
-
+        let lineWidth = radius*0.100 // progressBar thickness
+        
         let circularPath = UIBezierPath(arcCenter: CGPoint(x: bounds.midX, y: bounds.midY), radius: radius, startAngle: 0, endAngle: CGFloat.pi*2, clockwise: true)
 
         //TrackLayer
         trackLayer.path = circularPath.cgPath
-        trackLayer.fillColor = UIColor.white.cgColor // background color
+        trackLayer.fillColor = UIColor.white.cgColor
+        // background color
         trackLayer.strokeColor = UIColor.clear.cgColor
-        trackLayer.opacity = 0.5 // 투명도
+        trackLayer.opacity = 0.5
+        // transparency
         trackLayer.lineWidth = lineWidth
         trackLayer.lineCap = CAShapeLayerLineCap.round
 
         //BarLayer
         shapeLayer.path = circularPath.cgPath
         shapeLayer.fillColor = UIColor.clear.cgColor
-        shapeLayer.strokeColor = UIColor.orange.cgColor // 프로그래스바 색
-        shapeLayer.opacity = 0.8 // 투명도
+        shapeLayer.strokeColor = UIColor.orange.cgColor // progressBar color
+        shapeLayer.opacity = 0.8 // transparency
 
         shapeLayer.lineWidth = lineWidth
         shapeLayer.strokeEnd = 0
@@ -64,36 +66,33 @@ class ForTimeProgressBar: UIView {
 
     
     
-    // fromValue = 프로그래스바 시작지점 0 이 시작점, 1이 끝나는점
-    // duration = 프로그래스바가 0 에서 1 로 갈때의 시간 (단위:초)
-    // nowTime = 카운트업
-    // speed = 0 이면 프로그래스바가 움직이지 않음
-    // strokeEnd = 끝나는지점값 (얘가 1임)
-    // nowTime / Double(ForTimeTimerViewController.timeOut) = 현재 프로그래스바 진행상태
+    // fromValue = progress bar start point 0 starts, 1 ends
+    // duration = Time when progress bar goes from 0 to 1 (unit: second)
+    // nowTime = count up
+    // speed = if 0, the progress bar does not move.
+    // strokeEnd = end point value (this is 1)
+    // nowTime / Double(TabataTimerViewController.timeOut) = current progress
     
-    //처음 시작 프로그래스바 (기본)
+    // first start progress bar (default)
     func loadProgress(percentage: CGFloat) {
 
         let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
         basicAnimation.fromValue = 0
-        basicAnimation.duration = CFTimeInterval(ForTimeTimerViewController.timeOut) // 끝나는점(timeOut)
+        basicAnimation.duration = CFTimeInterval(ForTimeTimerViewController.timeOut)
         basicAnimation.fillMode = CAMediaTimingFillMode.forwards
         basicAnimation.isRemovedOnCompletion = false
-        shapeLayer.strokeColor = UIColor.orange.cgColor // 프로그래스바 색
+        shapeLayer.strokeColor = UIColor.orange.cgColor
         shapeLayer.strokeEnd = percentage
         shapeLayer.add(basicAnimation, forKey: "basicStroke")
 
     }
-
-
-    // 프로그래스바 일시정지
+    // restart progress bar
     func loadProgressPause(percentage: CGFloat, nowTime: Double) {
 
         let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
         basicAnimation.fromValue = nowTime / Double(ForTimeTimerViewController.timeOut)
-        basicAnimation.duration = Double(ForTimeTimerViewController.timeOut) // 프로그래스바 일시정지하면 멈춰진 시간에 정지
-        
-        shapeLayer.strokeColor = UIColor.gray.cgColor// 프로그래스바 색
+        basicAnimation.duration = Double(ForTimeTimerViewController.timeOut)
+        shapeLayer.strokeColor = UIColor.gray.cgColor
         basicAnimation.fillMode = CAMediaTimingFillMode.forwards
         basicAnimation.isRemovedOnCompletion = false
         basicAnimation.speed = 0

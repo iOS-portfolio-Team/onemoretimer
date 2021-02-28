@@ -74,7 +74,6 @@ class ForTimeCommentViewController: UIViewController {
         
         // comment update
         db.updateByID(exerciseWhen: getCurrentTime, exerciseComment: InsertExerciseComment)
-        print(db.read())
         performSegue(withIdentifier: "unwindForTimeTimer", sender: self)
         
     }

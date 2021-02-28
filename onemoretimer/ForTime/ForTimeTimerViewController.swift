@@ -68,7 +68,7 @@ class ForTimeTimerViewController: UIViewController {
     
     var totalWorked = 0
     
-    // Random Ment
+    // Random Mention
     let randomText = ["회원님 오늘은 하체하셔야죠 :D",
                  "운동이 끝났습니다. 회원님 하체한번 더 :D",
                  "잘하셨어요! 회원님 한번 더! :D",
@@ -87,11 +87,7 @@ class ForTimeTimerViewController: UIViewController {
         
         ForTimeTimerViewController.timeOut = Int(getTime)! * 60
         
-        if Int(getTime)! < 10 {
-            labelTotalRound.text = "총\(getRound)회중 \(roundCount)회차 (0\(getTime):00)"
-        }else{
-            labelTotalRound.text = "총\(getRound)회중 \(roundCount)회차 (\(getTime):00)"
-        }
+     
         
         imageViewFinish.image = UIImage(named: "TimerImage.png")
         
@@ -112,15 +108,39 @@ class ForTimeTimerViewController: UIViewController {
     @IBAction func buttonTabCount(_ sender: UIButton) {
         tabCount += 1
         buttonTabCount.setTitle("COUNT : \(tabCount)", for: .normal)
+        labelTotalRound.text = "총\(getRound)회중 \(tabCount)회차"
+        if tabCount == Int(getRound){
+            isTimerEnd = true
+            insertData("")
+            countUpTimer.invalidate()
+            buttonTabProgressBar.isEnabled = false
+            labelTimer.text = "END"
+            buttonTabCount.isEnabled = false
+            buttonTabCount.backgroundColor = UIColor.gray
+            buttonAddComment.isHidden = false
+            buttonTabCount.isHidden = true
+            labelTotalRound.isHidden = true
+            forTimeProgressBarUIView.isHidden = true
+            imageViewFinish.isHidden = false
+            imageViewFinish.image = UIImage(named: "success.png")
+            labelTimer.isHidden = true
+            buttonTabProgressBar.isHidden = true
+            playSound(file: "EndWorkOut", ext: "mp3")
+            labelFinishMent.isHidden = false
+            labelFinishMent.text = randomText[random]
+            
+        }
         
     }
     //Main timer
     @IBAction func buttonTabProgressBar(_ sender: UIButton) {
+        
+        
         if countUpButtonStatus{
             if countUpButtonOnOff{
                 progressCirclePause(nowTime: Double(countUp))
                 countUpTimer.invalidate()
-                labelTimer.text = "pause"
+                labelTimer.text = "Pause"
                 labelTimer.textColor = UIColor.gray
                 countUpButtonOnOff = false
                 buttonTabCount.isEnabled = false
@@ -140,6 +160,7 @@ class ForTimeTimerViewController: UIViewController {
             isTimerStarted = true
             if countDownButtonStatus{
                 labelTotalRound.isHidden = false
+                labelTotalRound.text = "총\(getRound)회중 \(tabCount)회차"
                 buttonTabCount.isHidden = false
                 imageViewFinish.isHidden = true
                 playSound(file: "StartWorkOut", ext: "mp3")
@@ -172,6 +193,10 @@ class ForTimeTimerViewController: UIViewController {
       @objc  func countDownTime(){
           labelTimer.text = "\(countDown)"
           countDown -= 1
+        if countDown == 2{
+            playSound(file: "CountDown", ext: "wav")
+        }
+        
           if countDown == -1{
               countDownTimer.invalidate()
               countUpButtonStatus = true
@@ -181,6 +206,7 @@ class ForTimeTimerViewController: UIViewController {
       }
       // count up
       @objc func updateTime(){
+        countSound()
           if countUp == 0{
               progressCircle()
               buttonTabCount.backgroundColor = orangeColor
@@ -206,23 +232,9 @@ class ForTimeTimerViewController: UIViewController {
             textSecond = "\(second)"
           }
           labelTimer.text = "\(textMinute):\(textSecond)"
-          countSound()
+         
     
         if countUp == ForTimeTimerViewController.timeOut{
-
-            roundCount += 1
-         
-            if Int(getTime)! < 10 {
-                labelTotalRound.text = "총\(getRound)회중 \(roundCount)회차 (0\(getTime):00)"
-            }else{
-                labelTotalRound.text = "총\(getRound)회중 \(roundCount)회차 (\(getTime):00)"
-            }
-            countUp = 0
-            minute = 0
-            second = 0
-          }
- 
-        if Int(getRound)! + 1 == roundCount{
             isTimerEnd = true
             insertData("")
             countUpTimer.invalidate()
@@ -235,12 +247,16 @@ class ForTimeTimerViewController: UIViewController {
             labelTotalRound.isHidden = true
             forTimeProgressBarUIView.isHidden = true
             imageViewFinish.isHidden = false
+            imageViewFinish.image = UIImage(named: "success.png")
             labelTimer.isHidden = true
             buttonTabProgressBar.isHidden = true
-            playSound(file: "EndWorkOut", ext: "mp3")
             labelFinishMent.isHidden = false
             labelFinishMent.text = randomText[random]
-        }
+
+          }
+    
+       
+ 
       }
     
     //back button
@@ -392,7 +408,7 @@ class ForTimeTimerViewController: UIViewController {
 
  
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "TabataSegue"{
+        if segue.identifier == "ForTimeCommentSegue"{
             let addNoteView = segue.destination as! ForTimeCommentViewController
        
             addNoteView.receiveItem(Int(getRound)!,currentTime, getTime)
@@ -425,23 +441,23 @@ class ForTimeTimerViewController: UIViewController {
     //The sound is determined according to the time set.
     func countSound(){
         
-        if Int(getTime)! <= 20 {
+        if ForTimeTimerViewController.timeOut <= 20 {
             
-            if Int(getTime)! - countUp == 3{
+            if ForTimeTimerViewController.timeOut - countUp == 3{
                 playSound(file: "CountDown", ext: "wav")
             }
-            if Int(getTime)! - countUp == Int(getTime)!/2 {
+            if ForTimeTimerViewController.timeOut - countUp == ForTimeTimerViewController.timeOut/2 {
                 playSound(file: "HalfInWorkOut", ext: "mp3")
             }
         
         }else{
-            if Int(getTime)! - countUp == 10{
+            if ForTimeTimerViewController.timeOut - countUp == 10{
                 playSound(file: "TenSecondLeft", ext: "mp3")
             }
-            if Int(getTime)! - countUp == 3{
+            if ForTimeTimerViewController.timeOut - countUp == 3{
                 playSound(file: "CountDown", ext: "wav")
             }
-            if Int(getTime)! - countUp == Int(getTime)!/2 {
+            if ForTimeTimerViewController.timeOut - countUp == ForTimeTimerViewController.timeOut/2 {
                 playSound(file: "HalfInWorkOut", ext: "mp3")
             }
         }

@@ -162,7 +162,7 @@ class TabataTimerViewController: UIViewController {
             // break timer
             progressCirclePause(nowTime: Double(countUp))
             countUpTimer.invalidate()
-            labelTimer.text = "pause"
+            labelTimer.text = "Pause"
             labelTimer.textColor = UIColor.gray
             countUpButtonOnOff = false
             
@@ -199,6 +199,10 @@ class TabataTimerViewController: UIViewController {
     @objc  func countDownTime(){
         labelTimer.text = "\(countDown)"
         countDown -= 1
+        if countDown == 2 {
+            playSound(file: "CountDown", ext: "wav")
+        }
+        
         if countDown == -1{
             countDownTimer.invalidate()
             countUpButtonStatus = true
@@ -225,7 +229,6 @@ class TabataTimerViewController: UIViewController {
                 buttonCheckResult.isHidden = false
                 buttonCheckResult.isEnabled = true
                 buttonCheckResult.backgroundColor = UIColor.orange
-                playSound(file: "EndWorkOut", ext: "mp3")
                 labelFinishMent.isHidden = false
                 labelFinishMent.text = randomText[random]
                 
@@ -266,12 +269,18 @@ class TabataTimerViewController: UIViewController {
         }
         
         labelTimer.text = "\(minuteText):\(secondText)"
+       
         if countUp == TabataTimerViewController.timeOut{
                 if isWork{
+
+                    
                     if getRest != 0 {
+                        
                         TabataTimerViewController.timeOut = getRest
                         isWork = !isWork
+                        
                     }
+                   
                     countUp = 0
                     minute = 0
                     second = 0
@@ -363,7 +372,7 @@ class TabataTimerViewController: UIViewController {
     
     //Function for putting into SQLite
     func insertData(_ isEnd : String) {
-        var stringWorkTime = " "
+        var stringWorkTime = ""
         var minute = 0
         var second = 0
         

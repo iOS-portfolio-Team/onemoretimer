@@ -7,12 +7,9 @@ class DBHelper
     init()
     {
         db = openDatabase()
-        print("---22")
         createTable()
-        // 테이블이랑 디비 만들어주는거
     }
-    let dbPath: String = "myDataNew1.sqlite"
-    //let dbPath: String = "myDb.sqlite"
+    let dbPath: String = "WorkOutLog.sqlite"
     var db:OpaquePointer?
 
     func openDatabase() -> OpaquePointer?
@@ -22,12 +19,10 @@ class DBHelper
         var db: OpaquePointer? = nil
         if sqlite3_open(fileURL.path, &db) != SQLITE_OK
         {
-            print("error opening database")
             return nil
         }
         else
         {
-            print("Successfully opened connection to database at \(dbPath)")
             return db
         }
     }
@@ -39,14 +34,10 @@ class DBHelper
         {
             if sqlite3_step(createTableStatement) == SQLITE_DONE
             {
-                print("person table created.")
             } else {
-                print("person table could not be created.")
             }
         } else {
-            print("CREATE TABLE statement could not be prepared.")
         }
-        print("-----11")
         sqlite3_finalize(createTableStatement)
     }
     
@@ -63,13 +54,9 @@ class DBHelper
             sqlite3_bind_text(insertStatement, 4, (exerciseJudgment as NSString).utf8String, -1, nil)
             sqlite3_bind_text(insertStatement, 5, (exerciseComment as NSString).utf8String, -1, nil)
             if sqlite3_step(insertStatement) == SQLITE_DONE {
-                print("Successfully inserted row.")
-                print("\(exerciseSequenceNumber) | \(exerciseName) | \(exerciseHow) | \(exerciseWhen) | \(exerciseJudgment) | \(exerciseComment) <--- 확인용")
             } else {
-                print("Could not insert row.")
             }
         } else {
-            print("INSERT statement could not be prepared.")
         }
         sqlite3_finalize(insertStatement)
     }
@@ -89,11 +76,8 @@ class DBHelper
                 let exerciseComment = String(describing: String(cString: sqlite3_column_text(queryStatement, 5)))
               
                 prepareStatement.append(workoutLog(exerciseSequenceNumber: Int(exerciseSequenceNumber), exerciseName: exerciseName, exerciseHow: exerciseHow, exerciseWhen: exerciseWhen, exerciseJudgment: exerciseJudgment, exerciseComment: exerciseComment))
-                print("Query Result:")
-                print("\(exerciseSequenceNumber) | \(exerciseName) | \(exerciseHow) | \(exerciseWhen) | \(exerciseJudgment) | \(exerciseComment)")
             }
         } else {
-            print("SELECT statement could not be prepared")
         }
         sqlite3_finalize(queryStatement)
         return prepareStatement
@@ -105,12 +89,9 @@ class DBHelper
         if sqlite3_prepare_v2(db, deleteStatementString, -1, &deleteStatement, nil) == SQLITE_OK {
             sqlite3_bind_int(deleteStatement, 1, Int32(exerciseSequenceNumber))
             if sqlite3_step(deleteStatement) == SQLITE_DONE {
-                print("Successfully deleted row.")
             } else {
-                print("Could not delete row.")
             }
         } else {
-            print("DELETE statement could not be prepared")
         }
         sqlite3_finalize(deleteStatement)
     }
@@ -124,16 +105,10 @@ class DBHelper
             sqlite3_bind_text(updateStatement, 2, (exerciseWhen as NSString).utf8String, -1, nil)
 
             if sqlite3_step(updateStatement) == SQLITE_DONE {
-                print("Successfully updates row.")
             } else {
-                print("Could not update row.")
             }
         } else {
-            print("UPDATE statement could not be prepared")
         }
         sqlite3_finalize(updateStatement)
     }
-    
-    
-    
 }

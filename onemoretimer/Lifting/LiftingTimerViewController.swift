@@ -192,7 +192,6 @@ class LiftingTimerViewController: UIViewController {
         }
      
       if Int(getRound)! + 1 == roundCount{
-        playSound(file: "EndWorkOut", ext: "mp3")
         countUpTimer.invalidate()
         buttonTabProgressBar.isEnabled = false
         labelTimer.text = "END"

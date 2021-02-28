@@ -44,7 +44,7 @@ class ForTimeViewController: UIViewController {
 
         
         
-        labelTotalRoundTime.text="총 1회를 5분안에 해야합니다."
+        labelTotalRoundTime.text="총 5라운를 5분안에 해야합니다."
         
         // Insert Array to Enter PickerView
                 for i in 5...100{
@@ -65,8 +65,8 @@ class ForTimeViewController: UIViewController {
                 
         // Give value to pickers and buttons when 'viewDidLoad'
         selectTimeValue = buttonTimes[0]
-        roundCountValue = buttonCount[0]
-        buttonRound.setTitle(buttonCount[0] + "회", for: .normal)
+        roundCountValue = buttonCount[4]
+        buttonRound.setTitle(buttonCount[4] + "회", for: .normal)
         buttonSelectTime.setTitle(buttonTimes[0] + "분", for: .normal)
     }
     

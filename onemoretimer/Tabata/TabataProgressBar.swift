@@ -39,7 +39,7 @@ class TabataProgressBar: UIView {
         //BarLayer
         shapeLayer.path = circularPath.cgPath
         shapeLayer.fillColor = UIColor.clear.cgColor
-        shapeLayer.strokeColor = UIColor.orange.cgColor // progressbar color
+        shapeLayer.strokeColor = UIColor.orange.cgColor // progressBar color
         shapeLayer.opacity = 0.8 // transparency
 
         shapeLayer.lineWidth = lineWidth
@@ -61,11 +61,7 @@ class TabataProgressBar: UIView {
         layer.addSublayer(shapeLayer)
 
     }
-    
-
-
-    
-    
+ 
     // fromValue = progress bar start point 0 starts, 1 ends
     // duration = Time when progress bar goes from 0 to 1 (unit: second)
     // nowTime = count up
@@ -78,7 +74,7 @@ class TabataProgressBar: UIView {
 
         let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
         basicAnimation.fromValue = 0
-        basicAnimation.duration = CFTimeInterval(TabataTimerViewController.timeOut) // 끝나는점(timeOut)
+        basicAnimation.duration = CFTimeInterval(TabataTimerViewController.timeOut)
         basicAnimation.fillMode = CAMediaTimingFillMode.forwards
         basicAnimation.isRemovedOnCompletion = false
         shapeLayer.strokeEnd = percentage
@@ -92,9 +88,7 @@ class TabataProgressBar: UIView {
 
         let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
         basicAnimation.fromValue = nowTime / Double(TabataTimerViewController.timeOut)
-        basicAnimation.duration = Double(TabataTimerViewController.timeOut) // 프로그래스바 일시정지하면 멈춰진 시간에 정지
-        
-        
+        basicAnimation.duration = Double(TabataTimerViewController.timeOut)
         basicAnimation.fillMode = CAMediaTimingFillMode.forwards
         basicAnimation.isRemovedOnCompletion = false
         basicAnimation.speed = 0
@@ -104,14 +98,13 @@ class TabataProgressBar: UIView {
         shapeLayer.add(basicAnimation, forKey: "basicStroke")
 
     }
-
-
+    
     // restart progress bar
     func loadProgressRestart(percentage: CGFloat,nowTime: Double) {
 
         let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
         basicAnimation.fromValue = nowTime / Double(TabataTimerViewController.timeOut)
-        basicAnimation.duration = Double(TabataTimerViewController.timeOut) - nowTime // restart하면 현재 시간부터 프로그래스바 실행
+        basicAnimation.duration = Double(TabataTimerViewController.timeOut) - nowTime
         basicAnimation.fillMode = CAMediaTimingFillMode.forwards
         basicAnimation.isRemovedOnCompletion = false
 

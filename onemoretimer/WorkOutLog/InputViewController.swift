@@ -47,5 +47,30 @@ class InputViewController: UIViewController {
         db.insert(exerciseSequenceNumber: 0, exerciseName: "\(InsertExerciseName)", exerciseHow: "\(InsertExerciseHow)", exerciseWhen: "\(InsertExerciseWhen)", exerciseJudgment: "\(InsertExerciseJudgment)", exerciseComment: "\(InsertExerciseComment)")
         
     }
+    
+    
+    
+//    @IBAction func updateBtn(_ sender: UIButton) {
+//        
+//        let InsertExerciseComment: String = updateComment.text!
+//        db.updateByID(exerciseSequenceNumer: 1, // 임의로 인덱스번호 선언함
+//         exerciseComment: "\(InsertExerciseComment)")
+//        
+//    }
+    
+    
+    
+    
+    
+    
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }
