@@ -151,7 +151,9 @@ class ForTimeTimerViewController: UIViewController {
                 labelTotalRound.text = "총\(getRound)회중 \(tabCount)회차"
                 buttonTabCount.isHidden = false
                 imageViewFinish.isHidden = true
-                playSound(file: "StartWorkOut", ext: "mp3")
+                if countDown > 5 {
+                    playSound(file: "StartWorkOut", ext: "mp3")
+                }
                 labelTimer.text = "\(countDown)"
                 countDownTimer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: countDownSelector, userInfo: nil, repeats: true)
                 countDownButtonStatus = false

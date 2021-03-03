@@ -219,8 +219,8 @@
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copy right 2021. Team AAA.All right reserved" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvs-gt-TWd">
-                                <rect key="frame" x="64.666666666666686" y="570.33333333333337" width="291" height="42.666666666666629"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvs-gt-TWd">
+                                <rect key="frame" x="210" y="570.33333333333337" width="0.0" height="42.666666666666629"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -251,6 +251,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yb9-60-Dvc">
+                                <rect key="frame" x="30" y="522.66666666666663" width="354" height="81.333333333333371"/>
+                                <string key="text">© Copyright 2021 Jongchan Ko, Taehyun Kim, 
+Hyejeong Ju, Jonghan Cha ,
+Hyeona Choi , Jiseok Choi 
+All rights reserved</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="76B-VB-wEH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -260,6 +270,7 @@
                             <constraint firstItem="xKt-cI-o97" firstAttribute="top" secondItem="spu-Kb-JIO" secondAttribute="bottom" constant="27.5" id="3BL-wE-Vhj"/>
                             <constraint firstItem="c1r-gc-lVz" firstAttribute="centerY" secondItem="xKt-cI-o97" secondAttribute="centerY" id="BYh-3M-kQs"/>
                             <constraint firstItem="xKt-cI-o97" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="c1r-gc-lVz" secondAttribute="trailing" constant="8" symbolic="YES" id="G31-9v-qTC"/>
+                            <constraint firstItem="76B-VB-wEH" firstAttribute="trailing" secondItem="Yb9-60-Dvc" secondAttribute="trailing" constant="30" id="HR6-K3-W0U"/>
                             <constraint firstItem="76B-VB-wEH" firstAttribute="trailing" secondItem="scd-3o-8ov" secondAttribute="trailing" constant="39" id="IHy-IB-XWL"/>
                             <constraint firstItem="G9D-yk-IOV" firstAttribute="leading" secondItem="spu-Kb-JIO" secondAttribute="leading" id="IZd-qo-cqO"/>
                             <constraint firstItem="76B-VB-wEH" firstAttribute="trailing" secondItem="spu-Kb-JIO" secondAttribute="trailing" constant="34" id="LsP-C8-GvT"/>
@@ -271,12 +282,14 @@
                             <constraint firstItem="c1r-gc-lVz" firstAttribute="top" secondItem="spu-Kb-JIO" secondAttribute="bottom" constant="31.5" id="eiV-sB-uc7"/>
                             <constraint firstItem="G9D-yk-IOV" firstAttribute="width" secondItem="tvs-gt-TWd" secondAttribute="height" multiplier="269:32" id="ezz-cN-YeS"/>
                             <constraint firstItem="76B-VB-wEH" firstAttribute="trailing" secondItem="Usy-ou-hzd" secondAttribute="trailing" constant="45" id="fXi-zC-qW2"/>
+                            <constraint firstItem="76B-VB-wEH" firstAttribute="bottom" secondItem="Yb9-60-Dvc" secondAttribute="bottom" constant="83" id="fe4-x7-v8l"/>
                             <constraint firstItem="2e8-EB-JvS" firstAttribute="centerY" secondItem="scd-3o-8ov" secondAttribute="centerY" id="hTZ-v2-y0W"/>
                             <constraint firstItem="spu-Kb-JIO" firstAttribute="top" secondItem="Usy-ou-hzd" secondAttribute="bottom" constant="8" symbolic="YES" id="irT-c5-omk"/>
                             <constraint firstItem="76B-VB-wEH" firstAttribute="bottom" secondItem="tvs-gt-TWd" secondAttribute="bottom" constant="74" id="j6B-Dy-zgq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="G9D-yk-IOV" secondAttribute="trailing" constant="9" id="k7a-qs-OEM"/>
                             <constraint firstItem="Usy-ou-hzd" firstAttribute="top" secondItem="qKY-Cd-uND" secondAttribute="bottom" constant="14" id="kJj-3i-5SN"/>
                             <constraint firstItem="scd-3o-8ov" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2e8-EB-JvS" secondAttribute="trailing" constant="8" symbolic="YES" id="mG2-Sf-DiN"/>
+                            <constraint firstItem="Yb9-60-Dvc" firstAttribute="leading" secondItem="76B-VB-wEH" secondAttribute="leading" constant="30" id="muB-ZS-QGS"/>
                             <constraint firstItem="qKY-Cd-uND" firstAttribute="top" secondItem="76B-VB-wEH" secondAttribute="top" constant="20" id="n8Y-p6-gXT"/>
                             <constraint firstItem="G9D-yk-IOV" firstAttribute="leading" secondItem="2e8-EB-JvS" secondAttribute="leading" id="pH3-Nc-CqF"/>
                             <constraint firstItem="G9D-yk-IOV" firstAttribute="top" secondItem="2e8-EB-JvS" secondAttribute="bottom" constant="23" id="qod-c1-Q1L"/>
@@ -292,7 +305,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bRF-li-Ytj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="755.625" y="70.774647887323951"/>
+            <point key="canvasLocation" x="755.07246376811599" y="70.108695652173921"/>
         </scene>
         <!--운동기록-->
         <scene sceneID="f5s-7C-Q2Y">

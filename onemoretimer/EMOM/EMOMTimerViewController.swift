@@ -155,7 +155,9 @@ class EMOMTimerViewController: UIViewController {
                 imageViewFinish.isHidden = true
                 
           
-                playSound(file: "StartWorkOut", ext: "mp3")
+                if countDown > 5 {
+                    playSound(file: "StartWorkOut", ext: "mp3")
+                }
                 labelTimerStart.text = "\(countDown)"
                 countDownTimer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: countDownSelector, userInfo: nil, repeats: true)
                 countDownButtonStatus = false

@@ -157,6 +157,9 @@ class AmrapTimerViewController: UIViewController {
                 buttonTabCount.isHidden = false
                 labelTimer.text = "\(countDown)"
                 countDownTimer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: countDownSelector, userInfo: nil, repeats: true)
+                if countDown > 5 {
+                    playSound(file: "StartWorkOut", ext: "mp3")
+                }
                 countDownButtonStatus = false
                 labelTimer.textColor = UIColor.orange
                 //buttonAddComent.backgroundColor = UIColor.orange
