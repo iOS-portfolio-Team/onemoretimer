@@ -100,7 +100,7 @@ class LiftingTimerViewController: UIViewController {
     
         if countStart{
             imageViewFinish.isHidden = true
-            playSound(file: "StartWorkOut", ext: "mp3")
+            playSound(file: "RestWorkOut", ext: "mp3")
             labelTotalRound.isHidden = false
             if countUpButtonOnOff{
                 countUpTimer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: countUpSelector, userInfo: nil, repeats: true)
@@ -188,6 +188,7 @@ class LiftingTimerViewController: UIViewController {
         labelTotalRound.isHidden = true
         viewLiftingProgressBar.isHidden = true
         imageViewFinish.isHidden = false
+        imageViewFinish.image = UIImage(named: "success.png")
         labelTimer.isHidden = true
         buttonTabProgressBar.isHidden = true
         isTimerEnd = true

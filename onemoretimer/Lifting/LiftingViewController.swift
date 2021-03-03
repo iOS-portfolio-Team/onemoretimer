@@ -34,7 +34,6 @@ class LiftingViewController: UIViewController {
         labelTimeValue = intTimes[5]
         selectTimeValue = String(intTimes[5])
         roundCountValue = rounds[4]
-        print(soundIsOn)
         buttonTime.setTitle("\(stringTimes[5])", for: .normal)
         buttonRound.setTitle("\(roundCountValue!)", for: .normal)
 

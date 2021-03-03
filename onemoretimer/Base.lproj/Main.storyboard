@@ -1724,7 +1724,7 @@ All rights reserved</string>
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="Oi0-ep-5dO" kind="showDetail" identifier="segueLiftingAddNote" id="Bs1-7o-wZf"/>
+                                                    <segue destination="Oi0-ep-5dO" kind="showDetail" identifier="LiftingCommentSegue" id="Bs1-7o-wZf"/>
                                                 </connections>
                                             </button>
                                         </subviews>

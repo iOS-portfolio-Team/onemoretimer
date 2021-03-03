@@ -54,7 +54,7 @@ class AmrapViewController: UIViewController,
         super.viewDidLoad()
         
         
-        buttonRound.setTitle("1회", for: .normal)
+        buttonRound.setTitle("1", for: .normal)
         buttonRound.isEnabled = false
         buttonRound.layer.masksToBounds = true
         buttonRound.layer.cornerRadius = 20
@@ -68,7 +68,7 @@ class AmrapViewController: UIViewController,
     }
 
     @IBAction func buttonAddRound(_ sender: UIButton) {
-        buttonRound.setTitle("\(rest.count+1)회", for: .normal)
+        buttonRound.setTitle("\(rest.count+1)", for: .normal)
         rest.append("30초")
         exercise.append("2분")
         sendRest.append(30)
@@ -176,6 +176,7 @@ class AmrapViewController: UIViewController,
         if rest.count > 1 {
             self.pickedValueRest.remove(at: indexPath.row)
             self.pickedValueExercise.remove(at: indexPath.row)
+            buttonRound.setTitle("\(rest.count)", for: .normal)
             self.rest.remove(at: indexPath.row)
             self.exercise.remove(at: indexPath.row)
             self.sendRest.remove(at: indexPath.row)
