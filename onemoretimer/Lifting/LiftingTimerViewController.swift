@@ -22,22 +22,11 @@ class LiftingTimerViewController: UIViewController {
     @IBOutlet weak var labelTimer: UILabel!
     @IBOutlet weak var buttonAddComment: UIButton!
     
-    @IBOutlet weak var labelFinishMent: UILabel!
-    
     // sound for counter
     var audioPlayer = AVAudioPlayer()
     var soundIsOn :Bool = UserDefaults.standard.bool(forKey: "switchIsOn")
     
-    // Random Ment
-    let randomText = ["회원님 오늘은 하체하셔야죠 :D",
-                 "운동이 끝났습니다. 회원님 하체한번 더 :D",
-                 "잘하셨어요! 회원님 한번 더! :D",
-                 "운동이 끝났습니다! 회원님 이제 어깨할까요? :D",
-                 "잘하셨어요! 회원님 이제 상체할까요~? :D",
-                 "회원님~ 오늘도 고생했어요! :D",
-                 "우리회원님 ! 잘하셨어요! :D",
-                 "회원님! 잘하셨어요! 조금만 더 해볼까요? :D"]
-    let random = Int(arc4random_uniform(7)) //1 or 0
+  
     
     // From Segue
     var getTime: String = ""
@@ -203,8 +192,7 @@ class LiftingTimerViewController: UIViewController {
         buttonTabProgressBar.isHidden = true
         isTimerEnd = true
         insertData("")
-        labelFinishMent.isHidden = false
-        labelFinishMent.text = randomText[random]
+       
       }
         
         
@@ -227,7 +215,7 @@ class LiftingTimerViewController: UIViewController {
         if isTimerStarted == true && isTimerEnd == false{
             pauseTimer()
             
-            let alertController = UIAlertController(title: "중단하시겠습니까?", message: nil, preferredStyle: UIAlertController.Style.alert)
+            let alertController = UIAlertController(title: "운동을 그만하시겠습니까?", message: nil, preferredStyle: UIAlertController.Style.alert)
             let alertActionPositive = UIAlertAction(title: "예", style: UIAlertAction.Style.default, handler: {ACTION in
                 
                 self.navigationController?.popViewController(animated: true)

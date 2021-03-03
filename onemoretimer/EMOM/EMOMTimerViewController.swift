@@ -21,9 +21,7 @@ class EMOMTimerViewController: UIViewController {
     @IBOutlet weak var imageViewFinish: UIImageView!
     @IBOutlet weak var buttonCheckHistory: UIButton!
     @IBOutlet weak var labelTotalComment: UILabel!
-    
-    @IBOutlet weak var labelFinishMent: UILabel!
-    
+   
     // From Segue
     var getSecond : Int = 0
     var getCount : String = ""
@@ -64,17 +62,7 @@ class EMOMTimerViewController: UIViewController {
     var audioPlayer = AVAudioPlayer()
     var soundIsOn :Bool = UserDefaults.standard.bool(forKey: "switchIsOn")
    
-    // Random Ment
-    let randomText = ["회원님 오늘은 하체하셔야죠 :D",
-                 "운동이 끝났습니다. 회원님 하체한번 더 :D",
-                 "잘하셨어요! 회원님 한번 더! :D",
-                 "운동이 끝났습니다! 회원님 이제 어깨할까요? :D",
-                 "잘하셨어요! 회원님 이제 상체할까요~? :D",
-                 "회원님~ 오늘도 고생했어요! :D",
-                 "우리회원님 ! 잘하셨어요! :D",
-                 "회원님! 잘하셨어요! 조금만 더 해볼까요? :D"]
-    let random = Int(arc4random_uniform(7)) //1 or 0
-      
+  
 
     //Timer status: For logging the WorkoutLog.
     var isTimerStarted = false
@@ -91,18 +79,16 @@ class EMOMTimerViewController: UIViewController {
         //UI Shape
         viewEmomTimer.layer.masksToBounds = true
         viewEmomTimer.layer.cornerRadius = 20
-        buttonTerminate.isHidden = true
-        buttonTerminate.isEnabled = false
-        buttonTerminate.backgroundColor = UIColor.gray
+       
         buttonCheckHistory.isHidden = true
         
-        // The Random Ment is Hidden
-        labelFinishMent.isHidden = true
+   
         
         // Unlimited mode is turned on
         if getInfinity == true{
-            buttonTerminate.isHidden = true
             buttonTerminate.isEnabled = false
+            buttonTerminate.isHidden = false
+            buttonTerminate.backgroundColor = UIColor.gray
             buttonTerminate.setTitle("종료", for: .normal)
             buttonTerminate.layer.masksToBounds = true
             buttonTerminate.layer.cornerRadius = 20
@@ -121,19 +107,18 @@ class EMOMTimerViewController: UIViewController {
         countUpTimer.invalidate()
         buttonTerminate.isHidden = true
         buttonStartTabProgressBar.isEnabled = false
-        labelTimerStart.text = "END"
+        labelTimerStart.text = ""
+        imageViewFinish.isHidden = false
+        imageViewFinish.image = UIImage(named: "success.png")
         buttonCheckHistory.isHidden = false
         labelTotalComment.isHidden = true
         viewEmomProgressBar.isHidden = true
-        imageViewFinish.isHidden = true
         buttonStartTabProgressBar.isHidden = true
         buttonCheckHistory.isHidden = false
         buttonCheckHistory.layer.masksToBounds = true
         buttonCheckHistory.layer.cornerRadius = 20
         
-        labelFinishMent.isHidden = false
-        labelFinishMent.text = randomText[random]
-       
+     
     }
     //Main timer
     @IBAction func buttonTabProgressBar(_ sender: UIButton) {
@@ -149,6 +134,7 @@ class EMOMTimerViewController: UIViewController {
                 countUpButtonOnOff = false
                 //Depends on countButtonOnOff UI color is changed
                 buttonTerminate.backgroundColor = UIColor.orange
+                buttonTerminate.isEnabled = true
                 labelTimerStart.textColor = UIColor.gray
                 
             }else{
@@ -168,11 +154,7 @@ class EMOMTimerViewController: UIViewController {
                 labelTotalComment.isHidden = false
                 imageViewFinish.isHidden = true
                 
-                if getInfinity == true{
-                    buttonTerminate.isHidden = false
-                    buttonTerminate.isEnabled = true
-                    buttonTerminate.backgroundColor = UIColor.orange
-                }
+          
                 playSound(file: "StartWorkOut", ext: "mp3")
                 labelTimerStart.text = "\(countDown)"
                 countDownTimer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: countDownSelector, userInfo: nil, repeats: true)
@@ -210,8 +192,8 @@ class EMOMTimerViewController: UIViewController {
             countUpButtonOnOff = false
 
             // Floating Alert
-            let alertController = UIAlertController(title: "중지", message: "중지 하시겠습니까?", preferredStyle: UIAlertController.Style.alert)
-            let alertAction = UIAlertAction(title: "네, 알겠습니다.", style: UIAlertAction.Style.default, handler: {ACTION in
+            let alertController = UIAlertController(title: "운동을 그만하시겠습니까?", message: nil, preferredStyle: UIAlertController.Style.alert)
+            let alertAction = UIAlertAction(title: "예", style: UIAlertAction.Style.default, handler: {ACTION in
                 self.navigationController?.popViewController(animated: true)
                 
             })
@@ -283,7 +265,7 @@ class EMOMTimerViewController: UIViewController {
         countSound()
       
         //'if' to check Infinity mode
-        if getInfinity == true && countUp == EMOMTimerViewController.timeOut
+        if getInfinity == true && countUp-1 == EMOMTimerViewController.timeOut
         {
             roundCount += 1
             labelTotalComment.text = "무제한모드 \(roundCount)라운드"
@@ -293,7 +275,7 @@ class EMOMTimerViewController: UIViewController {
             progressCircle()
          
         }
-        else if getInfinity == false && countUp == EMOMTimerViewController.timeOut
+        else if getInfinity == false && countUp-1 == EMOMTimerViewController.timeOut
         {
             roundCount += 1
             labelTotalComment.text = "\(getCount)라운드중 \(roundCount)라운드"
@@ -303,8 +285,7 @@ class EMOMTimerViewController: UIViewController {
             second = 0
             
             if Int(getCount)!  == roundCount{
-                labelFinishMent.isHidden = false
-                labelFinishMent.text = randomText[random]
+               
                 isTimerEnd = true
                 insertData("")
                 countUpTimer.invalidate()
@@ -314,6 +295,7 @@ class EMOMTimerViewController: UIViewController {
                 labelTotalComment.isHidden = true
                 viewEmomProgressBar.isHidden = true
                 imageViewFinish.isHidden = false
+                imageViewFinish.image = UIImage(named: "success.png")
                 labelTimerStart.isHidden = true
                 buttonStartTabProgressBar.isHidden = true
                 buttonCheckHistory.isHidden = false

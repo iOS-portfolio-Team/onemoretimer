@@ -21,7 +21,6 @@ class ForTimeTimerViewController: UIViewController {
     @IBOutlet weak var buttonTabProgressBar: UIButton!
     @IBOutlet weak var labelTimer: UILabel!
     @IBOutlet weak var buttonAddComment: UIButton!
-    @IBOutlet weak var labelFinishMent: UILabel!
     
     // From Segue
     var getTime: String = ""
@@ -68,16 +67,7 @@ class ForTimeTimerViewController: UIViewController {
     
     var totalWorked = 0
     
-    // Random Mention
-    let randomText = ["회원님 오늘은 하체하셔야죠 :D",
-                 "운동이 끝났습니다. 회원님 하체한번 더 :D",
-                 "잘하셨어요! 회원님 한번 더! :D",
-                 "운동이 끝났습니다! 회원님 이제 어깨할까요? :D",
-                 "잘하셨어요! 회원님 이제 상체할까요~? :D",
-                 "회원님~ 오늘도 고생했어요! :D",
-                 "우리회원님 ! 잘하셨어요! :D",
-                 "회원님! 잘하셨어요! 조금만 더 해볼까요? :D"]
-    let random = Int(arc4random_uniform(7)) //1 or 0
+  
     
     //Create a tab counter to use while the timer is moving
     var tabCount = 0
@@ -92,7 +82,7 @@ class ForTimeTimerViewController: UIViewController {
         imageViewFinish.image = UIImage(named: "TimerImage.png")
         
         //UI Shape
-        labelFinishMent.isHidden = true
+     
         forTimeTimerUIView.layer.masksToBounds = true
         forTimeTimerUIView.layer.cornerRadius = 20
         buttonTabCount.layer.masksToBounds = true
@@ -126,9 +116,7 @@ class ForTimeTimerViewController: UIViewController {
             labelTimer.isHidden = true
             buttonTabProgressBar.isHidden = true
             playSound(file: "EndWorkOut", ext: "mp3")
-            labelFinishMent.isHidden = false
-            labelFinishMent.text = randomText[random]
-            
+         
         }
         
     }
@@ -250,8 +238,7 @@ class ForTimeTimerViewController: UIViewController {
             imageViewFinish.image = UIImage(named: "success.png")
             labelTimer.isHidden = true
             buttonTabProgressBar.isHidden = true
-            labelFinishMent.isHidden = false
-            labelFinishMent.text = randomText[random]
+          
 
           }
     
@@ -324,7 +311,7 @@ class ForTimeTimerViewController: UIViewController {
         }
        
         let InsertExerciseName: String = "FORTIME"
-        let InsertExerciseHow: String = " / \(stringWorkTime) min"
+        let InsertExerciseHow: String = " / \(stringWorkTime) min \(tabCount)R"
         let formatter_year = DateFormatter()
         formatter_year.dateFormat = "yy-MM-dd / HH:mm:ss"
         let current_year_string = formatter_year.string(from: Date())
@@ -411,7 +398,7 @@ class ForTimeTimerViewController: UIViewController {
         if segue.identifier == "ForTimeCommentSegue"{
             let addNoteView = segue.destination as! ForTimeCommentViewController
        
-            addNoteView.receiveItem(Int(getRound)!,currentTime, getTime)
+            addNoteView.receiveItem(Int(getRound)!,currentTime, totalWorked)
            
            
         }

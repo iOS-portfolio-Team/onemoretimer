@@ -44,7 +44,7 @@ class ForTimeViewController: UIViewController {
 
         
         
-        labelTotalRoundTime.text="총 5라운를 5분안에 해야합니다."
+        labelTotalRoundTime.text="총 5회를 5분안에 해야합니다."
         
         // Insert Array to Enter PickerView
                 for i in 5...100{

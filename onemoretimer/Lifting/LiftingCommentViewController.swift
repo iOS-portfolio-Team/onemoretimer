@@ -71,7 +71,9 @@ class LiftingCommentViewController: UIViewController {
         performSegue(withIdentifier: "segueUnwindLiftingTimer", sender: self)
     }
     
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
    
 }

@@ -21,7 +21,7 @@ class TabataTimerViewController: UIViewController {
     @IBOutlet var labelShowRest: UILabel!
     @IBOutlet var buttonCheckResult: UIButton!
     @IBOutlet var imageViewFinish: UIImageView!
-    @IBOutlet weak var labelFinishMent: UILabel!
+
     
     // From Segue
     var getRound: Int = 0
@@ -87,8 +87,7 @@ class TabataTimerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        imageViewFinish.image = UIImage(named: "TimerImage.png")
-       
+        
         TabataTimerViewController.timeOut = getWork
     
         
@@ -97,10 +96,11 @@ class TabataTimerViewController: UIViewController {
         viewTabataTimer.layer.cornerRadius = 20
         buttonCheckResult.layer.masksToBounds = true
         buttonCheckResult.layer.cornerRadius = 20
-        
-        imageViewFinish.image = UIImage(named:" TimerImage.png")
+        imageViewFinish.isHidden = false
+        imageViewFinish.image = UIImage(named:"TimerImage.png")
         buttonCheckResult.isEnabled = false
-        imageViewFinish.isHidden = true
+        
+        
         buttonCheckResult.isHidden = true
         
         labelSet.text = "1 세트 ( 1 / \(getRound) )"
@@ -109,7 +109,7 @@ class TabataTimerViewController: UIViewController {
     
     //Main timer
     @IBAction func buttonTabProgressBar(_ sender: UIButton) {
-    
+        imageViewFinish.isHidden = true
             if countUpButtonStatus{
                 if countUpButtonOnOff{
                     playSound(file: "PauseWorkOut", ext: "mp3")
@@ -226,13 +226,11 @@ class TabataTimerViewController: UIViewController {
                 viewTabataProgressBar.isHidden = true
                 labelTimer.isHidden = true
                 imageViewFinish.isHidden = false
+                imageViewFinish.image = UIImage(named: "success.png")
                 buttonCheckResult.isHidden = false
                 buttonCheckResult.isEnabled = true
                 buttonCheckResult.backgroundColor = UIColor.orange
-                labelFinishMent.isHidden = false
-                labelFinishMent.text = randomText[random]
-                
-                
+               
             }
             progressCircle()
             
@@ -431,7 +429,7 @@ class TabataTimerViewController: UIViewController {
     }
     //The sound is determined according to the time set.
     func countSound(){
-       
+        
         if isWork{
             if getWork <= 20 {
                 
@@ -441,7 +439,7 @@ class TabataTimerViewController: UIViewController {
                 if getWork - countUp == getWork/2 {
                     playSound(file: "HalfInWorkOut", ext: "mp3")
                 }
-     
+                
             }else{
                 if getWork - countUp == 10{
                     playSound(file: "TenSecondLeft", ext: "mp3")
@@ -454,7 +452,30 @@ class TabataTimerViewController: UIViewController {
                 }
                 
             }
+        }else{
+            if getRest <= 20 {
+                
+                if getRest - countUp == 3{
+                    playSound(file: "CountDown", ext: "wav")
+                }
+                if getRest - countUp == getRest/2 {
+                    playSound(file: "HalfInWorkOut", ext: "mp3")
+                }
+                
+            }else{
+                if getRest - countUp == 10{
+                    playSound(file: "TenSecondLeft", ext: "mp3")
+                }
+                if getRest - countUp == 3{
+                    playSound(file: "CountDown", ext: "wav")
+                }
+                if getRest - countUp == getRest/2 {
+                    playSound(file: "HalfInWorkOut", ext: "mp3")
+                }
+            }
         }
+        
+        
         
     }
     

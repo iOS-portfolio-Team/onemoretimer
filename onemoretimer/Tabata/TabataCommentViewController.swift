@@ -79,4 +79,8 @@ class TabataCommentViewController: UIViewController {
         db.updateByID(exerciseWhen: getTime, exerciseComment: InsertExerciseComment)
         performSegue(withIdentifier: "unwindTabataTimer", sender: self)
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }

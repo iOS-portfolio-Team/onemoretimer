@@ -1,0 +1,360 @@
+
+/* Class = "UILabel"; text = "카운트 다운"; ObjectID = "2e8-EB-JvS"; */
+"2e8-EB-JvS.text" = "카운트 다운";
+
+/* Class = "UIButton"; normalTitle = "코멘트 입력"; ObjectID = "4bN-je-4jF"; */
+"4bN-je-4jF.normalTitle" = "코멘트 입력";
+
+/* Class = "UILabel"; text = "총 \\(maxCount)회중 \\(count)차"; ObjectID = "8VS-xV-7sT"; */
+"8VS-xV-7sT.text" = "총 \\(maxCount)회중 \\(count)차";
+
+/* Class = "UILabel"; text = "운동 코멘트"; ObjectID = "8cD-Kz-A8D"; */
+"8cD-Kz-A8D.text" = "운동 코멘트";
+
+/* Class = "UILabel"; text = "라운드 : "; ObjectID = "8mG-A5-KrF"; */
+"8mG-A5-KrF.text" = "라운드 : ";
+
+/* Class = "UILabel"; text = "횟수를 설정하고 해당라운드만큼 운동을 반복합니다."; ObjectID = "ANc-n6-Ax4"; */
+"ANc-n6-Ax4.text" = "횟수를 설정하고 해당라운드만큼 운동을 반복합니다.";
+
+/* Class = "UILabel"; text = "\\(time)만큼 \\(round) 라운드를  진행합니다"; ObjectID = "Acf-P5-CBs"; */
+"Acf-P5-CBs.text" = "\\(time)만큼 \\(round) 라운드를  진행합니다";
+
+/* Class = "UILabel"; text = "돌아가기 "; ObjectID = "Acv-iv-ucF"; */
+"Acv-iv-ucF.text" = "돌아가기 ";
+
+/* Class = "UILabel"; text = "회원님 한번만 더 :D"; ObjectID = "Ayv-8V-Ngc"; */
+"Ayv-8V-Ngc.text" = "회원님 한번만 더 :D";
+
+/* Class = "UILabel"; text = "21/02/17 오후 4시 50분 "; ObjectID = "Bk3-Mi-3f5"; */
+"Bk3-Mi-3f5.text" = "21/02/17 오후 4시 50분 ";
+
+/* Class = "UILabel"; text = "시작"; ObjectID = "ChQ-Kv-idC"; */
+"ChQ-Kv-idC.text" = "시작";
+
+/* Class = "UIButton"; normalTitle = "탭해서 카운트 해주세요"; ObjectID = "DaX-br-bRC"; */
+"DaX-br-bRC.normalTitle" = "탭해서 카운트 해주세요";
+
+/* Class = "UILabel"; text = "21/02/17 오후 4시 50분 "; ObjectID = "Dob-Rj-b2P"; */
+"Dob-Rj-b2P.text" = "21/02/17 오후 4시 50분 ";
+
+/* Class = "UILabel"; text = "총 \\(maxCount)회중 \\(count)차"; ObjectID = "E6J-i2-hoz"; */
+"E6J-i2-hoz.text" = "총 \\(maxCount)회중 \\(count)차";
+
+/* Class = "UIButton"; normalTitle = "탭해서 카운트 해주세요"; ObjectID = "EQL-w3-mc4"; */
+"EQL-w3-mc4.normalTitle" = "탭해서 카운트 해주세요";
+
+/* Class = "UILabel"; text = "TABATA 를 반복하시겠어요?"; ObjectID = "Eld-3C-Jus"; */
+"Eld-3C-Jus.text" = "TABATA 를 반복하시겠어요?";
+
+/* Class = "UILabel"; text = "\\(time) / \\(rounds)라운드"; ObjectID = "FEj-WL-3bS"; */
+"FEj-WL-3bS.text" = "\\(time) / \\(rounds)라운드";
+
+/* Class = "UILabel"; text = "FOR TIME"; ObjectID = "FXL-RA-G9d"; */
+"FXL-RA-G9d.text" = "FOR TIME";
+
+/* Class = "UITabBarItem"; title = "타이머"; ObjectID = "FY6-Ln-uhQ"; */
+"FY6-Ln-uhQ.title" = "타이머";
+
+/* Class = "UILabel"; text = "카운트 다운이 될때 \n몇초부터 시작할지 설정할 수 있습니다."; ObjectID = "G9D-yk-IOV"; */
+"G9D-yk-IOV.text" = "카운트 다운이 될때 \n몇초부터 시작할지 설정할 수 있습니다.";
+
+/* Class = "UILabel"; text = "돌아가기 "; ObjectID = "Hho-TI-VIu"; */
+"Hho-TI-VIu.text" = "돌아가기 ";
+
+/* Class = "UILabel"; text = "휴식 :"; ObjectID = "JCn-Z6-2Bf"; */
+"JCn-Z6-2Bf.text" = "휴식 :";
+
+/* Class = "UILabel"; text = "돌아가기 "; ObjectID = "Jva-wR-Exh"; */
+"Jva-wR-Exh.text" = "돌아가기 ";
+
+/* Class = "UIButton"; normalTitle = "운동내역을 확인하세요"; ObjectID = "K3U-kQ-VbN"; */
+"K3U-kQ-VbN.normalTitle" = "운동내역을 확인하세요";
+
+/* Class = "UILabel"; text = "중간에 중단했습니다."; ObjectID = "KSP-5d-nQB"; */
+"KSP-5d-nQB.text" = "중간에 중단했습니다.";
+
+/* Class = "UILabel"; text = "AMRAP"; ObjectID = "KZn-qH-8ZI"; */
+"KZn-qH-8ZI.text" = "AMRAP";
+
+/* Class = "UILabel"; text = "운동 코멘트"; ObjectID = "LbD-UW-6f6"; */
+"LbD-UW-6f6.text" = "운동 코멘트";
+
+/* Class = "UILabel"; text = "시작"; ObjectID = "MUB-uF-6ps"; */
+"MUB-uF-6ps.text" = "시작";
+
+/* Class = "UILabel"; text = "돌아가기 "; ObjectID = "Mto-ez-EB7"; */
+"Mto-ez-EB7.text" = "돌아가기 ";
+
+/* Class = "UILabel"; text = "얼마나 할까요?"; ObjectID = "NVk-9X-PZF"; */
+"NVk-9X-PZF.text" = "얼마나 할까요?";
+
+/* Class = "UILabel"; text = "∨"; ObjectID = "OFm-8Y-5tE"; */
+"OFm-8Y-5tE.text" = "∨";
+
+/* Class = "UILabel"; text = "얼마나 할까요?"; ObjectID = "OKl-c0-Xgi"; */
+"OKl-c0-Xgi.text" = "얼마나 할까요?";
+
+/* Class = "UILabel"; text = "운동 코멘트"; ObjectID = "Obz-MX-KPU"; */
+"Obz-MX-KPU.text" = "운동 코멘트";
+
+/* Class = "UILabel"; text = "∨"; ObjectID = "Olq-rk-HsU"; */
+"Olq-rk-HsU.text" = "∨";
+
+/* Class = "UIButton"; normalTitle = "탭해서 카운트 해주세요"; ObjectID = "OuD-gt-lDq"; */
+"OuD-gt-lDq.normalTitle" = "탭해서 카운트 해주세요";
+
+/* Class = "UILabel"; text = "무제한 모드"; ObjectID = "PNv-Uw-NAd"; */
+"PNv-Uw-NAd.text" = "무제한 모드";
+
+/* Class = "UIButton"; normalTitle = "운동내역을 확인하세요"; ObjectID = "PkX-Xj-6cu"; */
+"PkX-Xj-6cu.normalTitle" = "운동내역을 확인하세요";
+
+/* Class = "UIButton"; normalTitle = "코멘트 입력"; ObjectID = "Qcd-do-QID"; */
+"Qcd-do-QID.normalTitle" = "코멘트 입력";
+
+/* Class = "UILabel"; text = "\\(round) 라운드를 \\(time)안에 진행합니다"; ObjectID = "RWi-rr-egd"; */
+"RWi-rr-egd.text" = "\\(round) 라운드를 \\(time)안에 진행합니다";
+
+/* Class = "UILabel"; text = "운동 코멘트"; ObjectID = "TDd-HK-LkY"; */
+"TDd-HK-LkY.text" = "운동 코멘트";
+
+/* Class = "UILabel"; text = "반복세트"; ObjectID = "TbN-tt-9Cu"; */
+"TbN-tt-9Cu.text" = "반복세트";
+
+/* Class = "UILabel"; text = "원모어타임에서 회원님을 위한 \n여러가지 사전설정들을 마련했어요 "; ObjectID = "Usy-ou-hzd"; */
+"Usy-ou-hzd.text" = "원모어타임에서 회원님을 위한 \n여러가지 사전설정들을 마련했어요 ";
+
+/* Class = "UIButton"; normalTitle = "운동내역을 확인하세요"; ObjectID = "War-0X-2Mv"; */
+"War-0X-2Mv.normalTitle" = "운동내역을 확인하세요";
+
+/* Class = "UILabel"; text = "21/02/17 오후 4시 50분 "; ObjectID = "Wfp-O4-GJ5"; */
+"Wfp-O4-GJ5.text" = "21/02/17 오후 4시 50분 ";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "X5t-qo-aKJ"; */
+"X5t-qo-aKJ.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "운동내역을 확인하세요"; ObjectID = "Y75-zL-vJ5"; */
+"Y75-zL-vJ5.normalTitle" = "운동내역을 확인하세요";
+
+/* Class = "UILabel"; text = "운동 코멘트"; ObjectID = "YWd-gt-Yjs"; */
+"YWd-gt-Yjs.text" = "운동 코멘트";
+
+/* Class = "UILabel"; text = "\\(time)을 매 세트마다 쉽니다."; ObjectID = "YYl-QO-Ara"; */
+"YYl-QO-Ara.text" = "\\(time)을 매 세트마다 쉽니다.";
+
+/* Class = "UILabel"; text = "정해진 라운드를 운동 후 정한 시간만큼 휴식합니다."; ObjectID = "YuC-MI-e8T"; */
+"YuC-MI-e8T.text" = "정해진 라운드를 운동 후 정한 시간만큼 휴식합니다.";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "ZSn-y9-Sri"; */
+"ZSn-y9-Sri.title" = "Item";
+
+/* Class = "UILabel"; text = "제한시간 내에 얼마나 많이 할 수 있는지 체크합니다."; ObjectID = "ZnA-0Q-Zxv"; */
+"ZnA-0Q-Zxv.text" = "제한시간 내에 얼마나 많이 할 수 있는지 체크합니다.";
+
+/* Class = "UIButton"; normalTitle = "코멘트 입력"; ObjectID = "beF-vU-QUa"; */
+"beF-vU-QUa.normalTitle" = "코멘트 입력";
+
+/* Class = "UILabel"; text = "∨"; ObjectID = "byc-0s-anK"; */
+"byc-0s-anK.text" = "∨";
+
+/* Class = "UILabel"; text = "사운드 ( ON / OFF )"; ObjectID = "c1r-gc-lVz"; */
+"c1r-gc-lVz.text" = "사운드 ( ON / OFF )";
+
+/* Class = "UIButton"; normalTitle = "시작해 볼까요?"; ObjectID = "chX-fD-uIW"; */
+"chX-fD-uIW.normalTitle" = "시작해 볼까요?";
+
+/* Class = "UILabel"; text = "\\(time) / \\(rounds)라운드"; ObjectID = "csm-2S-7TW"; */
+"csm-2S-7TW.text" = "\\(time) / \\(rounds)라운드";
+
+/* Class = "UILabel"; text = "21/02/17 오후 4시 50분 "; ObjectID = "dBQ-QZ-00R"; */
+"dBQ-QZ-00R.text" = "21/02/17 오후 4시 50분 ";
+
+/* Class = "UILabel"; text = "얼마나 쉴까요?"; ObjectID = "dSS-1V-hrf"; */
+"dSS-1V-hrf.text" = "얼마나 쉴까요?";
+
+/* Class = "UILabel"; text = "라운드 : "; ObjectID = "dhF-8o-rLy"; */
+"dhF-8o-rLy.text" = "라운드 : ";
+
+/* Class = "UILabel"; text = "∨"; ObjectID = "eSG-QT-BWS"; */
+"eSG-QT-BWS.text" = "∨";
+
+/* Class = "UILabel"; text = "FORTIME / 00:20"; ObjectID = "eyD-gs-bBK"; */
+"eyD-gs-bBK.text" = "FORTIME / 00:20";
+
+/* Class = "UIButton"; normalTitle = "시작해 볼까요?"; ObjectID = "f67-7p-o5y"; */
+"f67-7p-o5y.normalTitle" = "시작해 볼까요?";
+
+/* Class = "UILabel"; text = "시작"; ObjectID = "fTh-SF-RNI"; */
+"fTh-SF-RNI.text" = "시작";
+
+/* Class = "UIButton"; normalTitle = "시작해 볼까요?"; ObjectID = "gMI-TB-HbW"; */
+"gMI-TB-HbW.normalTitle" = "시작해 볼까요?";
+
+/* Class = "UILabel"; text = "21/02/20"; ObjectID = "gmf-WZ-mWH"; */
+"gmf-WZ-mWH.text" = "21/02/20";
+
+/* Class = "UILabel"; text = "제한시간 내에 얼마나 많이 할 수 있는지 체크합니다."; ObjectID = "gz5-fL-cU8"; */
+"gz5-fL-cU8.text" = "제한시간 내에 얼마나 많이 할 수 있는지 체크합니다.";
+
+/* Class = "UILabel"; text = "운동 :"; ObjectID = "hYz-YZ-9We"; */
+"hYz-YZ-9We.text" = "운동 :";
+
+/* Class = "UILabel"; text = "정해진 라운드를 운동 후 정한 시간만큼 휴식합니다."; ObjectID = "iBz-Hb-YaX"; */
+"iBz-Hb-YaX.text" = "정해진 라운드를 운동 후 정한 시간만큼 휴식합니다.";
+
+/* Class = "UILabel"; text = "\\(time) / \\(rounds)라운드"; ObjectID = "j4i-9G-WX8"; */
+"j4i-9G-WX8.text" = "\\(time) / \\(rounds)라운드";
+
+/* Class = "UILabel"; text = "\\(time) / \\(rounds)라운드"; ObjectID = "j9u-NT-1Sh"; */
+"j9u-NT-1Sh.text" = "\\(time) / \\(rounds)라운드";
+
+/* Class = "UILabel"; text = "총 \\(maxCount)회중 \\(count)차"; ObjectID = "jCn-3D-kqQ"; */
+"jCn-3D-kqQ.text" = "총 \\(maxCount)회중 \\(count)차";
+
+/* Class = "UITabBarItem"; title = "설정"; ObjectID = "jXm-a8-DXB"; */
+"jXm-a8-DXB.title" = "설정";
+
+/* Class = "UILabel"; text = "TABATA"; ObjectID = "k6H-SF-t1m"; */
+"k6H-SF-t1m.text" = "TABATA";
+
+/* Class = "UIButton"; normalTitle = "코멘트 입력"; ObjectID = "kGO-Ro-lP1"; */
+"kGO-Ro-lP1.normalTitle" = "코멘트 입력";
+
+/* Class = "UITabBarItem"; title = "운동기록"; ObjectID = "l2E-DJ-8jG"; */
+"l2E-DJ-8jG.title" = "운동기록";
+
+/* Class = "UIButton"; normalTitle = "운동내역을 확인하세요"; ObjectID = "lFo-4W-P4i"; */
+"lFo-4W-P4i.normalTitle" = "운동내역을 확인하세요";
+
+/* Class = "UILabel"; text = "21/02/17 오후 4시 50분 "; ObjectID = "lfr-Q8-4sS"; */
+"lfr-Q8-4sS.text" = "21/02/17 오후 4시 50분 ";
+
+/* Class = "UIButton"; normalTitle = "시작해 볼까요?"; ObjectID = "mOA-Zv-ewh"; */
+"mOA-Zv-ewh.normalTitle" = "시작해 볼까요?";
+
+/* Class = "UILabel"; text = "시작"; ObjectID = "mhB-0t-3Za"; */
+"mhB-0t-3Za.text" = "시작";
+
+/* Class = "UILabel"; text = "얼마나 쉴까요?"; ObjectID = "mnu-vw-WiR"; */
+"mnu-vw-WiR.text" = "얼마나 쉴까요?";
+
+/* Class = "UIButton"; normalTitle = "코멘트 입력"; ObjectID = "oTj-2h-udc"; */
+"oTj-2h-udc.normalTitle" = "코멘트 입력";
+
+/* Class = "UILabel"; text = "EMOM"; ObjectID = "oUY-oQ-f9n"; */
+"oUY-oQ-f9n.text" = "EMOM";
+
+/* Class = "UILabel"; text = "라운드 : "; ObjectID = "pM4-8N-dIQ"; */
+"pM4-8N-dIQ.text" = "라운드 : ";
+
+/* Class = "UILabel"; text = "라운드 : "; ObjectID = "pYL-gM-XMF"; */
+"pYL-gM-XMF.text" = "라운드 : ";
+
+/* Class = "UILabel"; text = "총 \\(maxCount)회중 \\(count)차"; ObjectID = "pkC-Sh-sUY"; */
+"pkC-Sh-sUY.text" = "총 \\(maxCount)회중 \\(count)차";
+
+/* Class = "UILabel"; text = "설정"; ObjectID = "qKY-Cd-uND"; */
+"qKY-Cd-uND.text" = "설정";
+
+/* Class = "UIButton"; normalTitle = "시작해 볼까요?"; ObjectID = "qKz-iD-apZ"; */
+"qKz-iD-apZ.normalTitle" = "시작해 볼까요?";
+
+/* Class = "UILabel"; text = "시작"; ObjectID = "rAc-K5-jgH"; */
+"rAc-K5-jgH.text" = "시작";
+
+/* Class = "UILabel"; text = "총 \\(maxCount)회중 \\(count)차"; ObjectID = "rBW-R4-NXH"; */
+"rBW-R4-NXH.text" = "총 \\(maxCount)회중 \\(count)차";
+
+/* Class = "UILabel"; text = "오후 4시 50분"; ObjectID = "rXY-RT-AKJ"; */
+"rXY-RT-AKJ.text" = "오후 4시 50분";
+
+/* Class = "UILabel"; text = "LIFTING"; ObjectID = "s1B-mM-wI0"; */
+"s1B-mM-wI0.text" = "LIFTING";
+
+/* Class = "UILabel"; text = "정해진 갯수를 운동하고 남은쉬간은 휴식합니다."; ObjectID = "sT5-AA-E4D"; */
+"sT5-AA-E4D.text" = "정해진 갯수를 운동하고 남은쉬간은 휴식합니다.";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "scd-3o-8ov"; */
+"scd-3o-8ov.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "총 운동시간은 \\(totalTime) 입니다."; ObjectID = "sl5-ZT-9g0"; */
+"sl5-ZT-9g0.text" = "총 운동시간은 \\(totalTime) 입니다.";
+
+/* Class = "UILabel"; text = "횟수를 설정하고 해당라운드만큼 운동을 반복합니다."; ObjectID = "smV-ZY-ieW"; */
+"smV-ZY-ieW.text" = "횟수를 설정하고 해당라운드만큼 운동을 반복합니다.";
+
+/* Class = "UILabel"; text = "편리하게 사용해주세요 :D"; ObjectID = "spu-Kb-JIO"; */
+"spu-Kb-JIO.text" = "편리하게 사용해주세요 :D";
+
+/* Class = "UILabel"; text = "TABATA"; ObjectID = "t22-42-B8N"; */
+"t22-42-B8N.text" = "TABATA";
+
+/* Class = "UILabel"; text = "LIFTING"; ObjectID = "tH9-El-hj4"; */
+"tH9-El-hj4.text" = "LIFTING";
+
+/* Class = "UILabel"; text = "정해진 갯수를 운동하고 남은쉬간은 휴식합니다."; ObjectID = "tPi-JT-meq"; */
+"tPi-JT-meq.text" = "정해진 갯수를 운동하고 남은쉬간은 휴식합니다.";
+
+/* Class = "UILabel"; text = "EMOM"; ObjectID = "tTI-4v-Vct"; */
+"tTI-4v-Vct.text" = "EMOM";
+
+/* Class = "UILabel"; text = "Copy right 2021. Team AAA.All right reserved"; ObjectID = "tvs-gt-TWd"; */
+"tvs-gt-TWd.text" = "Copy right 2021. Team AAA.All right reserved";
+
+/* Class = "UILabel"; text = "얼마나 할까요?"; ObjectID = "u6t-mc-0Zr"; */
+"u6t-mc-0Zr.text" = "얼마나 할까요?";
+
+/* Class = "UILabel"; text = "횟수를 설정하고 해당라운드만큼 운동을 반복합니다."; ObjectID = "uQx-aU-LTd"; */
+"uQx-aU-LTd.text" = "횟수를 설정하고 해당라운드만큼 운동을 반복합니다.";
+
+/* Class = "UILabel"; text = "돌아가기 "; ObjectID = "udY-Lr-kz5"; */
+"udY-Lr-kz5.text" = "돌아가기 ";
+
+/* Class = "UILabel"; text = "내일부터 열심히..."; ObjectID = "ueT-IG-taL"; */
+"ueT-IG-taL.text" = "내일부터 열심히...";
+
+/* Class = "UILabel"; text = "∨"; ObjectID = "uiC-uv-fEW"; */
+"uiC-uv-fEW.text" = "∨";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vOj-YN-qsE"; */
+"vOj-YN-qsE.normalTitle" = "Button";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "vUf-4j-IsJ"; */
+"vUf-4j-IsJ.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vXC-cw-vwl"; */
+"vXC-cw-vwl.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "라운드  :"; ObjectID = "vgo-L8-k8s"; */
+"vgo-L8-k8s.text" = "라운드  :";
+
+/* Class = "UILabel"; text = "히이든"; ObjectID = "vzT-Xb-LaT"; */
+"vzT-Xb-LaT.text" = "히이든";
+
+/* Class = "UILabel"; text = "얼마나 할까요?"; ObjectID = "wSW-dv-ZtH"; */
+"wSW-dv-ZtH.text" = "얼마나 할까요?";
+
+/* Class = "UILabel"; text = "\\(time) / \\(rounds)라운드"; ObjectID = "wYH-Vo-Hd3"; */
+"wYH-Vo-Hd3.text" = "\\(time) / \\(rounds)라운드";
+
+/* Class = "UILabel"; text = "정해진 라운드동안 운동하고 쉴 건지 정합니다."; ObjectID = "wd8-tz-rNT"; */
+"wd8-tz-rNT.text" = "정해진 라운드동안 운동하고 쉴 건지 정합니다.";
+
+/* Class = "UILabel"; text = "1 AMRAP"; ObjectID = "x3N-gn-3g9"; */
+"x3N-gn-3g9.text" = "1 AMRAP";
+
+/* Class = "UILabel"; text = "AMRAP"; ObjectID = "xNT-QH-fRT"; */
+"xNT-QH-fRT.text" = "AMRAP";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "yBd-mR-ZYy"; */
+"yBd-mR-ZYy.title" = "Item";
+
+/* Class = "UILabel"; text = "FOR TIME"; ObjectID = "yap-F0-HpC"; */
+"yap-F0-HpC.text" = "FOR TIME";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "zay-Pu-lC7"; */
+"zay-Pu-lC7.title" = "Item";
+
+/* Class = "UILabel"; text = "운동을 추가해주세요"; ObjectID = "zeZ-96-Z8g"; */
+"zeZ-96-Z8g.text" = "운동을 추가해주세요";

@@ -2,11 +2,12 @@
 //  LiftingViewController.swift
 //  onemoretimer
 //
-//  Created by 고종찬 on 2021/02/24.
+//  Created by 고종찬 on 2021/03/01.
 //
 
 import UIKit
 import SimpleAlertPickers
+
 
 class LiftingViewController: UIViewController {
     
@@ -15,7 +16,6 @@ class LiftingViewController: UIViewController {
     let intTimes: [Int] = [10,20,30,40,50,60,70,80,90,100,110,120,150,180,210,240,270,300]
     let rounds: [String] = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"]
    
-
     @IBOutlet weak var buttonRound: UIButton!
     @IBOutlet weak var buttonTime: UIButton!
     @IBOutlet weak var buttonStart: UIButton!

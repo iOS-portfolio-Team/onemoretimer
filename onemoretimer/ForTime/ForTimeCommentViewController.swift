@@ -18,7 +18,7 @@ class ForTimeCommentViewController: UIViewController {
     var db:DBHelper = DBHelper()
    
     var getRound = 0
-    var getTime = ""
+    var getTime = 0
     var getCurrentTime = ""
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,22 +32,14 @@ class ForTimeCommentViewController: UIViewController {
         
         
         // show workout result
-        let minute = Int(getTime)! / 60
-        let second = Int(getTime)! % 60
+        let minute = getTime / 60
+        
         var stringWorkTime = ""
         
         if minute > 10 {
-            if second < 10 {
-                stringWorkTime = "\(minute):0\(second)"
-            }else{
-                stringWorkTime = "\(minute):\(second)"
-            }
+            stringWorkTime = "\(minute):00"
         }else{
-            if second < 10 {
-                stringWorkTime = "0\(minute):0\(second)"
-            }else{
-                stringWorkTime = "0\(minute):\(second)"
-            }
+            stringWorkTime = "0\(minute):00"
         }
        
         
@@ -58,7 +50,7 @@ class ForTimeCommentViewController: UIViewController {
     
  
     // from segue
-    func receiveItem(_ round: Int, _ currentTime: String,_ time: String) {
+    func receiveItem(_ round: Int, _ currentTime: String,_ time: Int) {
         getRound = round
         getCurrentTime = currentTime
         getTime = time
@@ -77,7 +69,10 @@ class ForTimeCommentViewController: UIViewController {
         performSegue(withIdentifier: "unwindForTimeTimer", sender: self)
         
     }
-    
+  
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 
 
 }

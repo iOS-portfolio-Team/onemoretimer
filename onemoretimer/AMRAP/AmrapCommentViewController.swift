@@ -70,12 +70,14 @@ class AmrapCommentViewController: UIViewController {
     @IBAction func buttonInsertComment(_ sender: UIButton) {
         let InsertExerciseComment: String = textViewComment.text!.trimmingCharacters(in: .whitespaces)
         // comment update
-        db.updateByID(exerciseWhen: getTime, exerciseComment: InsertExerciseComment)
+        db.updateByID(exerciseWhen: currentTime , exerciseComment: InsertExerciseComment)
 
         performSegue(withIdentifier: "unwindAmrapTimer", sender: self)
         
     }
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 
 }
 

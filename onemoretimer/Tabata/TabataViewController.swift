@@ -79,7 +79,8 @@ class TabataViewController: UIViewController {
         buttonTabataWork.layer.cornerRadius = 20
         buttonTabataRest.layer.masksToBounds = true
         buttonTabataRest.layer.cornerRadius = 20
-        
+        buttonTabataStart.layer.masksToBounds = true
+        buttonTabataStart.layer.cornerRadius = 20
         buttonTabataRepSet.layer.masksToBounds = true
         buttonTabataRepSet.layer.cornerRadius = 20
         buttonTabataRepRest.layer.masksToBounds = true

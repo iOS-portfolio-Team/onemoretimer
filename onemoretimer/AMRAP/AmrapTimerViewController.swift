@@ -21,7 +21,6 @@ class AmrapTimerViewController: UIViewController {
     @IBOutlet weak var labelRound: UILabel!
     @IBOutlet weak var labelTimer: UILabel!
     @IBOutlet weak var viewAmrapTimer: UIView!
-    @IBOutlet weak var labelFinishMent: UILabel!
     @IBOutlet weak var amrapTimerUiView: UIView!
     
     
@@ -59,17 +58,7 @@ class AmrapTimerViewController: UIViewController {
     
     var status = true
     
-    // Random Mention
-    let randomText = ["회원님 오늘은 하체하셔야죠 :D",
-                 "운동이 끝났습니다. 회원님 하체한번 더 :D",
-                 "잘하셨어요! 회원님 한번 더! :D",
-                 "운동이 끝났습니다! 회원님 이제 어깨할까요? :D",
-                 "잘하셨어요! 회원님 이제 상체할까요~? :D",
-                 "회원님~ 오늘도 고생했어요! :D",
-                 "우리회원님 ! 잘하셨어요! :D",
-                 "회원님! 잘하셨어요! 조금만 더 해볼까요? :D"]
-    let random = Int(arc4random_uniform(7))
-    
+   
     
     //status : for check timer status
     var countDownButtonStatus = true
@@ -95,15 +84,14 @@ class AmrapTimerViewController: UIViewController {
         super.viewDidLoad()
         
         AmrapTimerViewController.timeOut = getExerciseTime[0]
-        print("\(AmrapTimerViewController.timeOut) 나 타임아웃")
         
        
-        labelRound.text = "총 \(getExerciseTime.count) 라운드중 0 라운드 진행중"
+        labelRound.text = "총 \(getExerciseTime.count) 라운드중 1 라운드 진행중"
         
         getTime = getExerciseTime[0]
         
         //UI Shape
-        labelFinishMent.isHidden = true
+
         amrapTimerUiView.layer.cornerRadius = 20
         amrapTimerUiView.layer.masksToBounds = true
         buttonTabCount.layer.masksToBounds = true
@@ -125,26 +113,24 @@ class AmrapTimerViewController: UIViewController {
     
     // 타이머 버튼
     @IBAction func buttonAmrapProgressBar(_ sender: UIButton) {
-        print("cxcccc")
+    
         if countUpButtonStatus{
-            // 카운트 업일때 버튼 ACTION
-            // TRUE 일때 누르면 STOP
+            
             if countUpButtonOnOff{
                 progressCirclePause(nowTime: Double(countUp))
                 countUpTimer.invalidate()
                 labelTimer.text = "Pause"
                 labelTimer.textColor = UIColor.gray
                 countUpButtonOnOff = false
-                // 탭버튼 비활성화
+              
                 buttonTabCount.isEnabled = false
                 buttonTabCount.backgroundColor = UIColor.gray
-                
-            // FALSE 일때 누르면 RESTART
+           
             }else{
                 
                 labelTimer.text = "\(minuteText):\(secondText)"
                 progressCircleRestart(nowTime: Double(countUp))
-                // 휴식일때 퍼즈 -> 재시작때 회색 유지
+            
                 if status{
                     labelTimer.textColor = orangeColor
                     //탭버튼 활성화
@@ -164,8 +150,7 @@ class AmrapTimerViewController: UIViewController {
             
         }else{
             isTimerStarted = true
-            // 카운트 다운일때 버튼 ACTION
-            // 카운트다운 START
+            
             if countDownButtonStatus{
                 labelRound.isHidden = false
                 imageViewSuccess.isHidden = true
@@ -234,10 +219,13 @@ class AmrapTimerViewController: UIViewController {
             playSound(file: "CountDown", ext: "wav")
         }
         
+      
+        
         if countDown == -1{
             countDownTimer.invalidate()
+           
             countUpButtonStatus = true
-            labelTimer.text = "GO"
+    
             countUpTimer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: countUpSelector, userInfo: nil, repeats: true)
             progressCircle()
             buttonTabCount.backgroundColor = orangeColor
@@ -248,9 +236,11 @@ class AmrapTimerViewController: UIViewController {
     
     // count up
     @objc func updateTime(){
+        //when count up starts countdown is invalidated
+        countDownTimer.invalidate()
 
         if countUp == 0{
-
+            labelTimer.text = "GO"
         }
         totalWorked += 1
         countUp += 1
@@ -312,9 +302,7 @@ class AmrapTimerViewController: UIViewController {
                     imageViewSuccess.isHidden = false
                     imageViewSuccess.image = UIImage(named: "success.png")
                     labelTimer.isHidden = true
-                    labelFinishMent.isHidden = false
-                    labelFinishMent.text = randomText[random]
-                    
+                 
                 }else{
                     roundCount += 1
                     AmrapTimerViewController.timeOut = getExerciseTime[roundCount-1]
