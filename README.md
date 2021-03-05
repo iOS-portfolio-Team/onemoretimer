@@ -14,7 +14,6 @@
 ![!](https://github.com/iOS-portfolio-Team/OneMoreRnD/blob/main/onemoretimerPics/onemore%20(8).jpg)
 ![!](https://github.com/iOS-portfolio-Team/OneMoreRnD/blob/main/onemoretimerPics/onemore%20(9).jpg)
 ![!](https://github.com/iOS-portfolio-Team/OneMoreRnD/blob/main/onemoretimerPics/onemore%20(10).jpg)
-![!](https://github.com/iOS-portfolio-Team/OneMoreRnD/blob/main/onemoretimerPics/onemore%20(11).jpg)
 ![!](https://github.com/iOS-portfolio-Team/OneMoreRnD/blob/main/onemoretimerPics/onemore%20(12).jpg)
 ![!](https://github.com/iOS-portfolio-Team/OneMoreRnD/blob/main/onemoretimerPics/onemore%20(13).jpg)
 ![!](https://github.com/iOS-portfolio-Team/OneMoreRnD/blob/main/onemoretimerPics/onemore%20(14).jpg)
