@@ -57,6 +57,7 @@
 		7C9813C825E413A4001F06F6 /* AMRAP.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9813B625E413A4001F06F6 /* AMRAP.png */; };
 		7C9813C925E413A4001F06F6 /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9813B725E413A4001F06F6 /* main.png */; };
 		7C9813CC25E413A4001F06F6 /* smile.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9813BA25E413A4001F06F6 /* smile.png */; };
+		7CAB851625F4B513007EA499 /* WorkOutLogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB851525F4B513007EA499 /* WorkOutLogDetailViewController.swift */; };
 		7CBC9AF125EB7A8F00303117 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7CBC9AF025EB7A8F00303117 /* Settings.bundle */; };
 		7CCF6CCF25E62F1F00423BDF /* LiftingTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF6CCE25E62F1F00423BDF /* LiftingTimerViewController.swift */; };
 		7CCF6CD225E62F2F00423BDF /* LiftingCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF6CD125E62F2F00423BDF /* LiftingCommentViewController.swift */; };
@@ -140,6 +141,7 @@
 		7C9813B625E413A4001F06F6 /* AMRAP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AMRAP.png; sourceTree = "<group>"; };
 		7C9813B725E413A4001F06F6 /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main.png; sourceTree = "<group>"; };
 		7C9813BA25E413A4001F06F6 /* smile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smile.png; sourceTree = "<group>"; };
+		7CAB851525F4B513007EA499 /* WorkOutLogDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutLogDetailViewController.swift; sourceTree = SOURCE_ROOT; };
 		7CBC9AF025EB7A8F00303117 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		7CCF6CCE25E62F1F00423BDF /* LiftingTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftingTimerViewController.swift; sourceTree = "<group>"; };
 		7CCF6CD125E62F2F00423BDF /* LiftingCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftingCommentViewController.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 		7C15813725E4A5B500F5CE3B /* WorkOutLog */ = {
 			isa = PBXGroup;
 			children = (
+				7CAB851525F4B513007EA499 /* WorkOutLogDetailViewController.swift */,
 				D7608AEB25E4E78500839EA6 /* workoutLog.swift */,
 				D7608AEE25E4E7AE00839EA6 /* DBHelper.swift */,
 				D7608AF125E4E7EB00839EA6 /* WorkoutLogTableViewController.swift */,
@@ -498,6 +501,7 @@
 				32C1C2BE25E60311008A4FB9 /* TabataProgressBar.swift in Sources */,
 				7C98139425E4130B001F06F6 /* AppDelegate.swift in Sources */,
 				49E17E8D25E5F857000F9AD9 /* EMOMProgressBar.swift in Sources */,
+				7CAB851625F4B513007EA499 /* WorkOutLogDetailViewController.swift in Sources */,
 				7CCF6CD525E62F6200423BDF /* LiftingProgressBar.swift in Sources */,
 				7CCF6CD225E62F2F00423BDF /* LiftingCommentViewController.swift in Sources */,
 				49E17E8725E5F838000F9AD9 /* EMOMTimerViewController.swift in Sources */,
@@ -679,6 +683,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.01;
 				PRODUCT_BUNDLE_IDENTIFIER = com.onemore.onemoretimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -699,6 +704,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.01;
 				PRODUCT_BUNDLE_IDENTIFIER = com.onemore.onemoretimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

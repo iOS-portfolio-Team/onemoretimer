@@ -34,26 +34,36 @@ class WorkoutLogTableViewController: UITableViewController{
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return workoutLogs.count
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "workOutDetailView"{
+            let detailView = segue.destination as! WorkOutLogDetailViewController
+            let cell = sender as! WorkoutLogTableViewCell
+            let indexPath = self.workOutLogTable.indexPath(for: cell)
+            detailView.receivedItems(name: String(workoutLogs[(indexPath! as NSIndexPath).row].exerciseName), date: workoutLogs[(indexPath! as NSIndexPath).row].exerciseWhen, finished: workoutLogs[(indexPath! as NSIndexPath).row].exerciseJudgment, comment: workoutLogs[(indexPath! as NSIndexPath).row].exerciseComment, image: String(workoutLogs[(indexPath! as NSIndexPath).row].exerciseName))
+            
+        }
+    }
 
     
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let exerciseSequenceNumber = String(workoutLogs[indexPath.row].exerciseSequenceNumber)
-        
-            let deleteAlert = UIAlertController(title: "삭제", message: "삭제하시겠습니까?", preferredStyle: UIAlertController.Style.alert)
-        
-            let cancelAction = UIAlertAction(title: "아니오", style: UIAlertAction.Style.default, handler: nil)
-        
-        let yesAction = UIAlertAction(title: "네", style: UIAlertAction.Style.default, handler: { [self]ACTION in db.deleteByID(exerciseSequenceNumber: Int(exerciseSequenceNumber)!)
-            workoutLogs = db.read()
-            workOutLogTable.reloadData()
-            
-            })
-
-            deleteAlert.addAction(yesAction)
-            deleteAlert.addAction(cancelAction)
-            present(deleteAlert, animated: true, completion: nil)
+//        let exerciseSequenceNumber = String(workoutLogs[indexPath.row].exerciseSequenceNumber)
+//        
+//            let deleteAlert = UIAlertController(title: "삭제", message: "삭제하시겠습니까?", preferredStyle: UIAlertController.Style.alert)
+//        
+//            let cancelAction = UIAlertAction(title: "아니오", style: UIAlertAction.Style.default, handler: nil)
+//        
+//        let yesAction = UIAlertAction(title: "네", style: UIAlertAction.Style.default, handler: { [self]ACTION in db.deleteByID(exerciseSequenceNumber: Int(exerciseSequenceNumber)!)
+//            workoutLogs = db.read()
+//            workOutLogTable.reloadData()
+//            
+//            })
+//
+//            deleteAlert.addAction(yesAction)
+//            deleteAlert.addAction(cancelAction)
+//            present(deleteAlert, animated: true, completion: nil)
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
