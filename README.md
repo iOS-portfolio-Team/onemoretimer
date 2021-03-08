@@ -52,6 +52,8 @@
 ## CocoaPods Library 
 + SimpleAlertPickers
 ---
+## System flow
+![!](https://github.com/iOS-portfolio-Team/OneMoreRnD/blob/main/onemoretimerPics/onemoretimerSystemFlow.png)
 ## AppStore
 + https://apps.apple.com/kr/app/onemoretimer/id1553425042
 ## Demonstration video
